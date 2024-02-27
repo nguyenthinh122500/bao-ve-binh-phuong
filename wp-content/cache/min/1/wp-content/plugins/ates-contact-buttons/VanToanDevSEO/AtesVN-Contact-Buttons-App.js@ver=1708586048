@@ -1,0 +1,2 @@
+function ates_cb_popup(){var ates_cb_element=document.getElementById("ates-cb-popup");if(!ates_cb_element)return;if(ates_cb_element.style.display!=="none"){ates_cb_element.style.display="none"}else{ates_cb_element.style.display="block"}}
+function ates_contact_buttons(){var ates_cb_element=document.getElementById("ates-contact-buttons");if(!ates_cb_element)return;if(ates_cb_element.style.display=="none"){ates_cb_element.style.display="block"}else{ates_cb_element.style.display="none"}}

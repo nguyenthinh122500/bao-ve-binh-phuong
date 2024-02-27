@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html lang="vi" class="ie9 loading-site no-js"> <![endif]-->
+<!--[if IE 8 ]> <html lang="vi" class="ie8 loading-site no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="vi" class="loading-site no-js"> <!--<![endif]-->
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+	<!-- Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id=G-C422SDXWGH"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C422SDXWGH');
+</script>
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://anninhphuongdong.com/xmlrpc.php" />
+
+	<script type="rocketlazyloadscript">(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name='robots' content='max-image-preview:large' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!-- This site is optimized with the Yoast SEO Premium plugin v15.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Tham khảo ngay bảng nội quy bảo vệ tòa nhà I Bạn cần nên biết</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open%20Sans%3Aregular%2C700%2Cregular%2C700%2Cregular&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3Aregular%2C700%2Cregular%2C700%2Cregular&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3Aregular%2C700%2Cregular%2C700%2Cregular&#038;display=swap" /></noscript><link rel="stylesheet" href="../wp-content/cache/min/1/756d88320c470368f2ed5b6b89d29ee9.css" media="all" data-minify="1" />
+	<meta name="description" content="Tại sao các tòa nhà chung cư cần phải có nội quy ? Vậy nội quy bảo vệ tòa nhà cụ thể là gì ? Tìm hiểu với bài viết dưới đây nhé !" />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="../kham-khao-noi-quy-bao-ve-toa-nha.html" />
+	<meta property="og:locale" content="vi_VN" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Tham khảo ngay bảng nội quy bảo vệ tòa nhà I Bạn cần nên biết" />
+	<meta property="og:description" content="Tại sao các tòa nhà chung cư cần phải có nội quy ? Vậy nội quy bảo vệ tòa nhà cụ thể là gì ? Tìm hiểu với bài viết dưới đây nhé !" />
+	<meta property="og:url" content="https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/" />
+	<meta property="og:site_name" content="Công ty Bảo vệ Bình Phương" />
+	<meta property="article:publisher" content="https://www.facebook.com/songhoalong" />
+	<meta property="article:author" content="https://www.facebook.com/songhoalong" />
+	<meta property="article:published_time" content="2024-01-11T03:10:54+00:00" />
+	<meta property="article:modified_time" content="2024-01-11T03:15:31+00:00" />
+	<meta property="og:image" content="https://anninhphuongdong.com/wp-content/uploads/2024/01/noi-quy-bao-ve-toa-nha.jpg" />
+	<meta property="og:image:width" content="700" />
+	<meta property="og:image:height" content="350" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@baovehcm" />
+	<meta name="twitter:site" content="@bovsonghalong1" />
+	<meta name="twitter:label1" value="Được viết bởi">
+	<meta name="twitter:data1" value="baovebinhphuong">
+	<meta name="twitter:label2" value="Ước tính thời gian đọc">
+	<meta name="twitter:data2" value="10 phút">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://anninhphuongdong.com/#organization","name":"B\u1ea3o v\u1ec7 Song H\u1ecfa Long","url":"https://anninhphuongdong.com/","sameAs":["https://www.facebook.com/songhoalong","","https://www.youtube.com/channel/UC59rk24WWuIHQEtUPL1H2vw/featured","https://www.pinterest.com/bovsongholong/","https://twitter.com/bovsonghalong1"],"logo":{"@type":"ImageObject","@id":"https://anninhphuongdong.com/#logo","inLanguage":"vi","url":"","caption":"B\u1ea3o v\u1ec7 Song H\u1ecfa Long"},"image":{"@id":"https://anninhphuongdong.com/#logo"}},{"@type":"WebSite","@id":"https://anninhphuongdong.com/#website","url":"https://anninhphuongdong.com/","name":"C\u00f4ng ty B\u1ea3o v\u1ec7 Song H\u1ecfa Long","description":"Cung c\u1ea5p d\u1ecbch v\u1ee5 b\u1ea3o v\u1ec7 &amp; V\u1ec7 s\u0129 chuy\u00ean nghi\u1ec7p","publisher":{"@id":"https://anninhphuongdong.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://anninhphuongdong.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"vi"},{"@type":"ImageObject","@id":"https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/#primaryimage","inLanguage":"vi","url":"https://anninhphuongdong.com/wp-content/uploads/2024/01/noi-quy-bao-ve-toa-nha.jpg","width":700,"height":350,"caption":"n\u1ed9i quy b\u1ea3o v\u1ec7 t\u00f2a nh\u00e0"},{"@type":"WebPage","@id":"https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/#webpage","url":"https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/","name":"Tham kh\u1ea3o ngay b\u1ea3ng n\u1ed9i quy b\u1ea3o v\u1ec7 t\u00f2a nh\u00e0 I B\u1ea1n c\u1ea7n n\u00ean bi\u1ebft","isPartOf":{"@id":"https://anninhphuongdong.com/#website"},"primaryImageOfPage":{"@id":"https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/#primaryimage"},"datePublished":"2024-01-11T03:10:54+00:00","dateModified":"2024-01-11T03:15:31+00:00","description":"T\u1ea1i sao c\u00e1c t\u00f2a nh\u00e0 chung c\u01b0 c\u1ea7n ph\u1ea3i c\u00f3 n\u1ed9i quy ? V\u1eady n\u1ed9i quy b\u1ea3o v\u1ec7 t\u00f2a nh\u00e0 c\u1ee5 th\u1ec3 l\u00e0 g\u00ec ? T\u00ecm hi\u1ec3u v\u1edbi b\u00e0i vi\u1ebft d\u01b0\u1edbi \u0111\u00e2y nh\u00e9 !","inLanguage":"vi","potentialAction":[{"@type":"ReadAction","target":["https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/"]}]},{"@type":"Article","@id":"https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/#article","isPartOf":{"@id":"https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/#webpage"},"author":{"@id":"https://anninhphuongdong.com/#/schema/person/76e4cc010533165312485f506a98290f"},"headline":"Tham kh\u1ea3o n\u1ed9i quy b\u1ea3o v\u1ec7 t\u00f2a nh\u00e0 b\u1ea1n n\u00ean bi\u1ebft","datePublished":"2024-01-11T03:10:54+00:00","dateModified":"2024-01-11T03:15:31+00:00","mainEntityOfPage":{"@id":"https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/#webpage"},"publisher":{"@id":"https://anninhphuongdong.com/#organization"},"image":{"@id":"https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/#primaryimage"},"articleSection":"TIN T\u1ee8C","inLanguage":"vi"},{"@type":"Person","@id":"https://anninhphuongdong.com/#/schema/person/76e4cc010533165312485f506a98290f","name":"baovesonghoalong","description":"T\u00f4i l\u00e0 Ph\u01b0\u01a1ng - CEO C\u00f4ng ty B\u1ea3o v\u1ec7 chuy\u00ean nghi\u1ec7p Song H\u1ecfa Long. C\u00f4ng ty chuy\u00ean cung c\u1ea5p cho thu\u00ea d\u1ecbch v\u1ee5 b\u1ea3o v\u1ec7 &amp; v\u1ec7 s\u0129 chuy\u00ean nghi\u1ec7p nh\u1ea5t hi\u1ec7n nay.","sameAs":["https://anninhphuongdong.com","https://www.facebook.com/songhoalong","https://www.instagram.com/songhoalong12/","https://www.linkedin.com/in/congtybaovesonghoalong/","","https://twitter.com/@baovehcm","https://myspace.com/songhoalong12","https://www.youtube.com/channel/UC59rk24WWuIHQEtUPL1H2vw/featured","https://soundcloud.com/songhoalong",""]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Dòng thông tin Công ty Bảo vệ Bình Phương &raquo;" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Dòng phản hồi Công ty Bảo vệ Bình Phương &raquo;" href="../comments/feed/index.html" />
+
+
+
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+
+
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container nav ul ul li ul li {font-size: %!important;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+
+
+<style id='flatsome-main-inline-css' type='text/css'>
+@font-face {
+				font-family: "fl-icons";
+				font-display: block;
+				src: url(../wp-content/themes/flatsome/assets/css/icons/fl-icons.eot@v=3.14.2);
+				src:
+					url(../wp-content/themes/flatsome/assets/css/icons/fl-icons.eot) format("embedded-opentype"),
+					url(../wp-content/themes/flatsome/assets/css/icons/fl-icons.woff2@v=3.14.2) format("woff2"),
+					url(../wp-content/themes/flatsome/assets/css/icons/fl-icons.ttf@v=3.14.2) format("truetype"),
+					url(../wp-content/themes/flatsome/assets/css/icons/fl-icons.woff@v=3.14.2) format("woff"),
+					url(../wp-content/themes/flatsome/assets/css/icons/fl-icons.svg@v=3.14.2) format("svg");
+			}
+</style>
+
+
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://anninhphuongdong.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://anninhphuongdong.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer='defer' src="https://anninhphuongdong.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="ez-toc-scroll-scriptjs-js-after">
+/* <![CDATA[ */
+jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").forEach(t=>{t.setAttribute("ez-toc-data-id","#"+decodeURI(t.getAttribute("id")))}),jQuery("a.ez-toc-link").click(function(){let t=jQuery(this).attr("href"),e=jQuery("#wpadminbar"),i=0;30>30&&(i=30),e.length&&(i+=e.height()),jQuery('[ez-toc-data-id="'+decodeURI(t)+'"]').length>0&&(i=jQuery('[ez-toc-data-id="'+decodeURI(t)+'"]').offset().top-i),jQuery("html, body").animate({scrollTop:i},500)})});
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://anninhphuongdong.com/wp-json/" /><link rel="alternate" type="application/json" href="https://anninhphuongdong.com/wp-json/wp/v2/posts/6455" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php@rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='../kham-khao-noi-quy-bao-ve-toa-nha.html' />
+<link rel="alternate" type="application/json+oembed" href="https://anninhphuongdong.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fanninhphuongdong.com%2Fnoi-quy-bao-ve-toa-nha%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://anninhphuongdong.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fanninhphuongdong.com%2Fnoi-quy-bao-ve-toa-nha%2F&#038;format=xml" />
+<style>.bg{opacity: 0; transition: opacity 1s; -webkit-transition: opacity 1s;} .bg-loaded{opacity: 1;}</style><!--[if IE]><link rel="stylesheet" type="text/css" href="https://anninhphuongdong.com/wp-content/themes/flatsome/assets/css/ie-fallback.css"><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script><script>var head = document.getElementsByTagName('head')[0],style = document.createElement('style');style.type = 'text/css';style.styleSheet.cssText = ':before,:after{content:none !important';head.appendChild(style);setTimeout(function(){head.removeChild(style);}, 0);</script><script src="https://anninhphuongdong.com/wp-content/themes/flatsome/assets/libs/ie-flexibility.js"></script><![endif]--><link rel="icon" href="../wp-content/uploads/2020/02/cropped-logo-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2020/02/cropped-logo-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2020/02/cropped-logo-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://anninhphuongdong.com/wp-content/uploads/2020/02/cropped-logo-270x270.jpg" />
+<style id="custom-css" type="text/css">:root {--primary-color: #446084;}.header-main{height: 100px}#logo img{max-height: 100px}#logo{width:284px;}#logo a{max-width:200px;}.header-bottom{min-height: 10px}.header-top{min-height: 20px}.transparent .header-main{height: 90px}.transparent #logo img{max-height: 90px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 170px;}.header.show-on-scroll,.stuck .header-main{height:70px!important}.stuck #logo img{max-height: 70px!important}.header-bg-color, .header-wrapper {background-color: rgba(68,31,198,0.86)}.header-bottom {background-color: #f1f1f1}.header-main .nav > li > a{line-height: 16px }.stuck .header-main .nav > li > a{line-height: 50px }.header-bottom-nav > li > a{line-height: 16px }@media (max-width: 549px) {.header-main{height: 70px}#logo img{max-height: 70px}}.header-top{background-color:#d6d6d6!important;}body{font-family:"Open Sans", sans-serif}body{font-weight: 0}.nav > li > a {font-family:"Open Sans", sans-serif;}.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-family:"Open Sans", sans-serif;}.nav > li > a {font-weight: 700;}.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-weight: 700;}h1,h2,h3,h4,h5,h6,.heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a{font-family: "Open Sans", sans-serif;}h1,h2,h3,h4,h5,h6,.heading-font,.banner h1,.banner h2{font-weight: 700;}.alt-font{font-family: "Open Sans", sans-serif;}.alt-font{font-weight: 0!important;}.footer-1{background-image: url('../wp-content/uploads/2023/08/chan-trang-web.jpg');}.footer-1{background-color: rgba(0,0,0,0.52)}.footer-2{background-color: #000000}.absolute-footer, html{background-color: #000000}/* Custom CSS */.header-bottom {display:none}.full-width .ubermenu-nav, .container, .row{max-width: 1210px}.row.row-collapse{max-width: 1180px}.row.row-small{max-width: 1202.5px}.row.row-large{max-width: 1240px}.header-main{height: 105px}#logo img{max-height: 105px}#logo{width:335px;}#logo a{max-width:380px;}.stuck #logo img{padding:4px 0;}.header-top{min-height: 27px}.transparent .header-main{height: 224px}.transparent #logo img{max-height: 224px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 254px;}.header.show-on-scroll,.stuck .header-main{height:77px!important}.stuck #logo img{max-height: 77px!important}.search-form{ width: 39%;}.header-bg-color {background:transparent}.header-bg-image {background-repeat: repeat-x;} .header-main .nav > li > a{line-height: 16px }.stuck .header-main .nav > li > a{line-height: 9px }.header-bottom-nav > li > a{line-height: 16px }@media (max-width: 549px) {.header-main{height: 70px}#logo img{max-height: 70px}}.main-menu-overlay{background-color: #ffffff}.nav-dropdown-has-arrow li.has-dropdown:before{border-bottom-color: #000000;}.nav .nav-dropdown{border-color: #000000 }.nav-dropdown{font-size:100%}.header-top{background-color:#FF0000!important;}/* Color */.accordion-title.active, .has-icon-bg .icon .icon-inner,.logo a, .primary.is-underline, .primary.is-link, .badge-outline .badge-inner, .nav-outline > li.active> a,.nav-outline >li.active > a, .cart-icon strong,[data-color='primary'], .is-outline.primary{color: #ed1b23;}/* Color !important */[data-text-color="primary"]{color: #ed1b23!important;}/* Background */.scroll-to-bullets a,.featured-title, .label-new.menu-item > a:after, .nav-pagination > li > .current,.nav-pagination > li > span:hover,.nav-pagination > li > a:hover,.has-hover:hover .badge-outline .badge-inner,button[type="submit"], .button.wc-forward:not(.checkout):not(.checkout-button), .button.submit-button, .button.primary:not(.is-outline),.featured-table .title,.is-outline:hover, .has-icon:hover .icon-label,.nav-dropdown-bold .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold > li > a:hover, .nav-dropdown-bold.dark .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold.dark > li > a:hover, .is-outline:hover, .tagcloud a:hover,.grid-tools a, input[type='submit']:not(.is-form), .box-badge:hover .box-text, input.button.alt,.nav-box > li > a:hover,.nav-box > li.active > a,.nav-pills > li.active > a ,.current-dropdown .cart-icon strong, .cart-icon:hover strong, .nav-line-bottom > li > a:before, .nav-line-grow > li > a:before, .nav-line > li > a:before,.banner, .header-top, .slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow, .primary.is-outline:hover, .button.primary:not(.is-outline), input[type='submit'].primary, input[type='submit'].primary, input[type='reset'].button, input[type='button'].primary, .badge-inner{background-color: #ed1b23;}/* Border */.nav-vertical.nav-tabs > li.active > a,.scroll-to-bullets a.active,.nav-pagination > li > .current,.nav-pagination > li > span:hover,.nav-pagination > li > a:hover,.has-hover:hover .badge-outline .badge-inner,.accordion-title.active,.featured-table,.is-outline:hover, .tagcloud a:hover,blockquote, .has-border, .cart-icon strong:after,.cart-icon strong,.blockUI:before, .processing:before,.loading-spin, .slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow, .primary.is-outline:hover{border-color: #ed1b23}.nav-tabs > li.active > a{border-top-color: #ed1b23}.widget_shopping_cart_content .blockUI.blockOverlay:before { border-left-color: #ed1b23 }.woocommerce-checkout-review-order .blockUI.blockOverlay:before { border-left-color: #ed1b23 }/* Fill */.slider .flickity-prev-next-button:hover svg,.slider .flickity-prev-next-button:hover .arrow{fill: #ed1b23;}/* Background Color */[data-icon-label]:after, .secondary.is-underline:hover,.secondary.is-outline:hover,.icon-label,.button.secondary:not(.is-outline),.button.alt:not(.is-outline), .badge-inner.on-sale, .button.checkout, .single_add_to_cart_button{ background-color:#fff100; }/* Color */.secondary.is-underline,.secondary.is-link, .secondary.is-outline,.stars a.active, .star-rating:before, .woocommerce-page .star-rating:before,.star-rating span:before, .color-secondary{color: #fff100}/* Color !important */[data-text-color="secondary"]{color: #fff100!important;}/* Border */.secondary.is-outline:hover{border-color:#fff100}body{font-size: 95%;}@media screen and (max-width: 549px){body{font-size: 100%;}}body{font-family:"Open Sans", sans-serif}body{font-weight: 0}body{color: #353535}.nav > li > a {font-family:"Arimo", sans-serif;}.nav > li > a {font-weight: 700;}h1,h2,h3,h4,h5,h6,.heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a{font-family: "Open Sans", sans-serif;}h1,h2,h3,h4,h5,h6,.heading-font,.banner h1,.banner h2{font-weight: 700;}h1,h2,h3,h4,h5,h6,.heading-font{color: #0a0a0a;}.breadcrumbs{text-transform: none;}button,.button{text-transform: none;}.nav > li > a, .links > li > a{text-transform: none;}.section-title span{text-transform: none;}h3.widget-title,span.widget-title{text-transform: none;}.alt-font{font-family: "Pattaya", sans-serif;}.alt-font{font-weight: 0!important;}.header:not(.transparent) .header-nav.nav > li > a {color: #fcf8f8;}.header:not(.transparent) .header-nav.nav > li > a:hover,.header:not(.transparent) .header-nav.nav > li.active > a,.header:not(.transparent) .header-nav.nav > li.current > a,.header:not(.transparent) .header-nav.nav > li > a.active,.header:not(.transparent) .header-nav.nav > li > a.current{color: #dd3333;}.header-nav.nav-line-bottom > li > a:before,.header-nav.nav-line-grow > li > a:before,.header-nav.nav-line > li > a:before,.header-nav.nav-box > li > a:hover,.header-nav.nav-box > li.active > a,.header-nav.nav-pills > li > a:hover,.header-nav.nav-pills > li.active > a{color:#FFF!important;background-color: #dd3333;}.header:not(.transparent) .header-bottom-nav.nav > li > a{color: #fcf8f8;}.header:not(.transparent) .header-bottom-nav.nav > li > a:hover,.header:not(.transparent) .header-bottom-nav.nav > li.active > a,.header:not(.transparent) .header-bottom-nav.nav > li.current > a,.header:not(.transparent) .header-bottom-nav.nav > li > a.active,.header:not(.transparent) .header-bottom-nav.nav > li > a.current{color: #fcf8f8;}.header-bottom-nav.nav-line-bottom > li > a:before,.header-bottom-nav.nav-line-grow > li > a:before,.header-bottom-nav.nav-line > li > a:before,.header-bottom-nav.nav-box > li > a:hover,.header-bottom-nav.nav-box > li.active > a,.header-bottom-nav.nav-pills > li > a:hover,.header-bottom-nav.nav-pills > li.active > a{color:#FFF!important;background-color: #fcf8f8;}.header-main .social-icons,.header-main .cart-icon strong,.header-main .menu-title,.header-main .header-button > .button.is-outline,.header-main .nav > li > a > i:not(.icon-angle-down){color: #fcf8f8!important;}.header-main .header-button > .button.is-outline,.header-main .cart-icon strong:after,.header-main .cart-icon strong{border-color: #fcf8f8!important;}.header-main .header-button > .button:not(.is-outline){background-color: #fcf8f8!important;}.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover,.header-main .header-button > .button:hover i,.header-main .header-button > .button:hover span{color:#FFF!important;}.header-main .menu-title:hover,.header-main .social-icons a:hover,.header-main .header-button > .button.is-outline:hover,.header-main .nav > li > a:hover > i:not(.icon-angle-down){color: #333333!important;}.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover{background-color: #333333!important;}.header-main .current-dropdown .cart-icon strong:after,.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover{border-color: #333333!important;}.absolute-footer, html{background-color: #d92727}iframe{width:100% !important;}#related_posts ul{width:100%}.blog-single related_posts ul li.comments-area{display:inline-block} .bai-viet .post-item .chi-phi-du-kien, .page-right-sidebar .large-columns-1 .post-item .chi-phi-du-kien{display:none}.tabbed-content .nav{margin-left:0 !important} .page-inner ul{margin-left:20px}#related_posts ul li h4{height: 45px; overflow: hidden; font-size:16px; font-weight:normal; line-height:22px; margin-top:8px;margin-bottom:0}.fb_iframe_widget_fluid span{background: white}.post {margin: 0 0 15px;}#related_posts ul li{padding:8px; width:33.33%; margin-bottom:0; float: left; list-style:none}#related_posts{width: 100%; display: inline-block; background: white; padding:10px}.row-small>.col{padding:0px 9.8px 0px}#wp-live-chat p{padding-left:5px}#wplc_chatmsg{padding-left: 0px !important;}.wplc_offline{font-size: 15px;}.thiet-ke-noi-that .cot9 .portfolio-box .portfolio-box-title{font-weight: normal;letter-spacing: 0;font-size: 14px;line-height: 21px;} .thiet-ke-noi-that .cot9 .portfolio-box .show-on-hover{display:none} .absolute-footer{padding:10px 0 10px; font-size:13px}.footer-secondary{padding:0} .thiet-ke-noi-that .cot9 .post-item .box-text .is-divider, .thi-cong-noi-that .cot9 .post-item .box-text .is-divider, .blog-single .entry-header .entry-category, .blog-single .entry-image{display:none} .blog-single .large-9{padding-right:20px}.blog-single .entry-content {font-size:15px}.blog-single .entry-title{font-size:20px; font-weight:normal; color:#055263; margin-bottom:0px}.bai-viet .post-item .box-vertical .post-title:hover{color: #066928} .sub-menu li a{background: white; padding: 6px 15px; border-radius:3px;} .sub-menu li a:hover{background: #f7f7f7;} .sub-menu li{margin-bottom:20px; list-style:none; margin-right:10px; float: left;}.sub-menu{display:inline-block; margin-top:10px; margin-left:-8px}.is-divider{margin: 8px 0px; max-width:100%; height:1px !important}.blog-single .entry-header-text-top{padding-bottom:0} .blog-single .entry-content{padding-top:0px}.title-bao-gia{display: block;text-align: center;margin-bottom: 10px;font-size: 16px;font-weight: normal;color: #00252d;}.thong-tin-bv .key{font-weight:bold}.thong-tin-bv .chi_phi{color: #ffe200; font-size: 18px}.tai-bao-gia {font-size:15px}.tai-bao-gia .left{width: 40%; float: left;}.tai-bao-gia .clearboth{clear:both} .tai-bao-gia .right{width: 60%; float: right; padding-left: 10px}.tai-bao-gia{width: 100%;background: white;padding: 10px; display:block}.chi-phi-du-kien .left{width:70%; float: left} .chi-phi-du-kien .right{width:30%; float: right; color: #b5b5b5; text-align:right; font-size:15px; padding-top:2px}.clearboth{clear:both} .chi-phi-du-kien{display: flex; color: #d01419; font-size:17px;margin-top: 5px;}.thiet-ke-noi-that .cot9 .chi-phi-du-kien, .thi-cong-noi-that .cot9 .chi-phi-du-kien{display:none} .cate-page .col .box-blog-post .is-divider{margin-bottom:0}.thong-tin-bv{background: #055263;padding: 10px;margin: 0 auto;border: 1px dashed #00252d;margin-top: 10px;color: white;border-radius: 3px;font-size: 15px;line-height: 28px;}.mo-ta-bv h2{font-size:16px;}.body-section{margin-bottom:15px}.body-section .cot3{border: 1px dashed orange;border-radius: 4px;BACKGROUND: #fffaf3;}.gioi-thieu-sidebar p{margin-bottom:10px}.body-section .cot3 .col-inner:hover{box-shadow:0 0 10px #b3b3b3;border:1px solid #d2d1cf;border-radius:3px}.gioi-thieu-sidebar .content{border-bottom:1px dashed #d2d2d0;margin-bottom:10px}.gioi-thieu-sidebar .content p{text-align:justify;font-size:15px;margin-bottom:10px}.gioi-thieu-sidebar .view-more a{color:#eb0b15}.gioi-thieu-sidebar .view-more a:hover{text-decoration:underline}.gioi-thieu-sidebar h3{font-size:17px;color:#00252d;border-bottom:1px dashed #d2d2d0;padding-bottom:10px}.off-canvas .nav-vertical>li>a{padding-top: 10px;padding-bottom: 10px;}.blog-archive #breadcrumbs{margin-left:-9px; margin-right:-8px}.blog-single .comments-area{background: white;padding: 10px;border-radius: 3px;/*border: 1px solid gainsboro;*/margin-top: 10px;}.body-section .cot3{border-radius:3px;font-size:14px}#breadcrumbs{font-size: 13px; color: gray; background:white;padding:8px 10px;border-radius:3px;/*border:1px solid #e0e0e0;border-bottom:1px solid #c3c3c3;*/margin-bottom:10px}.tabbed-content .nav>li{margin-right:0}.page-wrapper .large-3{padding-left:0}.page-wrapper .page-inner{font-size:15px;background:white;padding:10px;border-radius:3px;border:1px solid #e0e0e0}.page-wrapper .large-3 #secondary{background:white;padding:10px;border-radius:3px;border:1px solid #e0e0e0}.tabbed-content .nav>li>a{padding:8px 10px;font-weight:normal;letter-spacing:0;font-size:16px; color: #3a3a3a}span.widget-title{display:block;color:#00252d;padding-top:5px;padding-bottom:5px}#secondary .widget_nav_menu{margin-bottom:10px}#secondary ul li{list-style:circle;color:#00252d;margin-left:20px;font-size:15px}.widget .is-divider{margin-top:4px;margin-bottom:5px;max-width:100%;height:2px;background:#f97f29}.page-wrapper{background:#fff; padding-top:20px; padding-bottom:20px;}.white.is-outline:hover{border-color: #b9b9b9;}.meta-date-capnhat, .luot-xem {padding-right: 13px;}.info-tieu-de a {color: gray;}.body-section .post-item .chi-phi-du-kien {display:none}.info-tieu-de {margin-top: 10px;font-size: 14px;color: #8a8a8a;}.kien-thuc .post-item .chi-phi-du-kien{display:none}.tabbed-content .nav>li.active>a{color:#000;letter-spacing:0;font-weight:normal;font-size:15px}.tabbed-content .nav{background:#efefef;height:35px}.header-nav>li>a{font-weight:500;padding:5px 10px;letter-spacing:0}.header-nav>li{margin:0}.section-title-container{margin-bottom:10px}.section-title a{font-size:14px;margin-left:auto;font-weight:400;color:#00252d}.section-title-normal{border-bottom:2px solid #00252d}.section-title-normal span{font-size:16px; border-bottom:2px solid #055263}.cot9 .post-item .box-text p{font-size:13px} .cot9 .post-item .box-text .post-title{font-weight: normal;font-size: 15px;text-transform: none;line-height: 22px}.bai-viet .post-item .box-vertical p{font-size:13px} .bai-viet .post-item .box-vertical .post-title{font-weight: normal;font-size: 16px;line-height: 22px;}.cot9 .post-item .box-text .post-title:hover{text-decoration:underline}.vi-sao .large-12{padding:0 15px 0}.vi-sao .row12-bottom p{margin-bottom:0}.vi-sao .row12-bottom{padding:0 15px 10px!important}.bai-viet .row .col .post-item{margin-bottom:8px}.cot9 .post-item .box-text .is-divider{max-width:100%;height:1px}li.html input{margin:0;background:#f7f7f7;height:35px;border-top-left-radius:3px;border-bottom-left-radius:3px;box-shadow:0 0 0}.header-search-form .button.secondary:not(.is-outline){height:35px;width:35px;border-top-right-radius:3px;border-bottom-right-radius:3px}.flickity-prev-next-button{top:80%!important}.flickity-prev-next-button.previous{right:7%!important;left:auto;background:rgba(0,0,0,.73)}.flickity-prev-next-button.next{background:rgba(0,0,0,.73)}.slider-section .cot3 .mb{margin-bottom:5px}.sp-tk-tham-khao .slider-nav-reveal .flickity-prev-next-button.previous,.sp-tk-tham-khao .slider-nav-reveal .flickity-prev-next-button.next,.sp-tk-tham-khao .slider-nav-reveal .is-divider{display:none}.sp-tk-tham-khao,.quy-trinh,.ban-do,.bai-viet-moi{padding-left:0!important;padding-right:0!important}.nguon-luc{padding-left:10px!important;padding-right:0!important}.blog-archive .archive-page-header .row .large-12{padding:0 5px 15px}.blog-archive .post-sidebar{padding-left:0!important;padding-right:20px!important}.blog-archive .large-9 .post-item{padding:0 5px 15px}.blog-archive .large-9 .post-item .box-text{padding-bottom:5px}.blog-archive .large-9 .box-blog-post .is-divider{height:1px;max-width:100%}.blog-archive .large-9 .post-date{display:none}.blog-archive .archive-page-header .taxonomy-description{background:white;padding:10px;border-radius:3px;border:1px solid #dadada;text-align:left}.blog-archive .large-9 .post-item .col-inner .box{background:white;padding:10px;border-radius:3px; border:1px solid #e0e0e0}.page-title{position:relative;color:#0b8c33;padding-bottom:10px}.blog-single .article-inner{background: white;border-radius: 3px;/*border: 1px solid #e0e0e0;*/padding: 10px;}.thiet-ke-noi-that .cot9 .portfolio-box .portfolio-box-title:hover{text-decoration:underline}.cate-page .tabbed-content .post-item .post-title, .sp-tk-tham-khao .post-item .post-title{font-weight:normal; font-size:15px; line-height:22px}.nguon-luc-col .col-inner{border:1px solid gray}.cate-page .col{padding-bottom:0}.module-taisao {float: left;margin-bottom: 26px;width: 100%;}.module-taisao > .best-bic {border-bottom: 1px solid #e5e5e5;font-size: 28px;font-weight: lighter;margin-bottom: 26px;padding-bottom: 6px;text-align: center;text-transform: uppercase;}.module-taisao > .best-bic .after-good {color: #015920;font-weight: bold;}.module-trung .taisao-left, .module-trung .taisao-right {float: left;width: 50%;}.module-trung .taisao-left {background: rgba(0, 0, 0, 0) url("https://anninhphuongdong.com/wp-content/uploads/2018/04/chu-chu.png") no-repeat scroll right center;padding-right: 39px;}.taisao-left .item-ts {-webkit-box-align: center;-ms-flex-align: center;align-items: center;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;margin-bottom: 12px;}.item-ts:nth-child(5n+1) .bic-one {color: #015920;}.item-ts .bic-one {font-size: 42px;font-weight: bold;line-height: 1;margin-right: 15px;}.item-ts .bic-two {font-size: 14px;width: 41%;}.module-trung p {margin-bottom: 0;padding-bottom: 0;}.bic-hay {display: none;}.module-trung .taisao-right {padding-left: 26px;}.module-trung .taisao-left, .module-trung .taisao-right {float: left;width: 50%;}.item-ts-r {display: -webkit-box;display: -ms-flexbox;display: flex;margin-bottom: 12px;}.item-ts-r .bic-one {margin-right: 5px;}.item-ts-r .bic-one i {color: #015920;font-size: 18px;}.item-ts-r .bic-two {display: block;}.blog-single .footer.entry-meta{font-size:15px}.html-before-comments{background: white;padding: 10px;}.kien-thuc .post-item{margin-bottom:10px}.phonering-alo-phone{top:auto}.cate-page .tabbed-content .post-item .post-title{height:44px; overflow:hidden}.blog-archive .page-title{display:none}.blog-archive .post-item .box-text p, .page-right-sidebar .post-item .box-text p{font-size:13px}.blog-archive .page-title, .blog-archive .post-item .post-title, .page-right-sidebar .post-item .post-title{height:40px; overflow:hidden; font-size:15px; font-weight:normal}#related_posts li a img{height:177px}.box-blog-post .is-divider {margin-top: .5em;margin-bottom: .5em;height: 2px;display: none;}.cot-tin-tuc{background: #fff;padding: 10px;border: 1px solid #e4e4e4;border-radius: 3px} .section-title-normal span {padding-bottom: 3.5px;border-bottom: 2px solid #dd3333;}.tin-tuc-cot2 {padding: 10px 10px 5px;border: 1px dashed orange;border-radius: 4px;BACKGROUND: #fffaf3}.tin-tuc-cot1 {border: 1px solid #e4e4e4;border-radius: 4px;padding-top: 10px;padding-bottom: 5px} .blog-archive .absolute,.home .chi-phi-du-kien,.widget .is-divider {display: none}h6,.is-uppercase, h5.uppercase {line-height: 1.2;text-transform: none;color: #fff;}.header-main .nav > li > a {line-height: 16px;font-weight: 500;font-size: 14px;}.post-title is-large uppercase {line-height: 1.2;text-transform: none;color: #000;}.header:not(.transparent) .header-nav.nav > li > a {color: #fcf8f8;text-transform: uppercase;}.main-header {text-align: center;margin: 40px 0px 0px 0px;font-size: 24px;color: #195c90;font-weight: 500;background: url(../wp-content/uploads/2021/04/b1.png) no-repeat center 50px;height: 90px;}#hotline{position:fixed;bottom:0;right:0;z-index:999999999999999;width:215px;height:auto;border-top-left-radius:5px;border-top-right-radius:5px;overflow:hidden}#hotline a.inner{float:left;padding:0 8px;width:230px;color:#fff;text-decoration:none;height:80px;line-height:40px;text-shadow:0 1px 0 rgba(0,0,0,0.1);background-repeat:repeat-x;background-size:auto;background-position:0 0;background-color:#e73344;border:0;border-bottom:1px solid #e73344;z-index:9999999;margin-right:12px;font-size:17px;font-weight:700;}#hotline{float:right;}@media(max-width:1000px){.hotline{margin-right:0px;}#hotline{display:none;}}@media(min-width:1024px) and (max-width:1284px){}@media(min-width:769px) and (max-width:990px){}aside.floating{display:none;width:100%;position:fixed;bottom:0;left:0;right:0;z-index:2;background-color:#f37022;-webkit-box-shadow:0 -1px 0 rgba(0,0,0,0.20);-moz-box-shadow:0 -1px 0 rgba(0,0,0,0.20);-o-box-shadow:0 -1px 0 rgba(0,0,0,0.20);box-shadow:0 -1px 0 rgba(0,0,0,0.20);font-size:18px;}.cover{max-width:1200px;margin:0 auto;width:100%}aside.floating section.chatus a{color:#fff;}aside.floating section.chatus span{line-height:10px;}aside.floating section.chatus{border-right:0;position:relative;padding-left:55px;text-align:left;white-space:nowrap}aside.floating section.inside>a,aside.floating section.chatus{float:left;border-right:1px dotted #ccc;text-transform:capitalize;vertical-align:middle;color:#fff;text-align:center;width:24%;padding:10px 0px 5px;cursor:pointer;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;position:relative;}@media(max-width:667px){#toolbox,.camket{display:none;}aside.floating{display:block;}}@media(max-width:800px){aside.floating section.inside>a,aside.floating section.chatus{width:50%;}aside.floating section.chatus{line-height:38px;}}.header-main .header-button > .button:not(.is-outline) {background-color: #dd3333!important;}.button span {display: inline-block;line-height: 1.6;color: #fff;}/* Background Color */[data-icon-label]:after, .secondary.is-underline:hover,.secondary.is-outline:hover,.icon-label,.button.secondary:not(.is-outline),.button.alt:not(.is-outline), .badge-inner.on-sale, .button.checkout, .single_add_to_cart_button {background-color: #ed1b23;}.dark .nav-vertical li li.menu-item-has-children>a,.nav-dark .nav-vertical li li.menu-item-has-children>a,.nav-dark .nav>li.html,.nav-dark .header-button {/* color:#fff; */font-size: 16px;font-family: SVNAndrogyne;color: #fffc00; }.header-top-right ul li {color: #fff;display: inline;padding: 0 10px;font-size: 14px;font-family: 'Roboto', sans-serif;}.header-top-right ul li:first-child {border-right:1px solid #fff;} .header-top-right ul li i{margin-right:5px;}.header-top-right ul li a{color:#fff;}.absolute-footer.dark {color: #fcf8f8;}th,td {padding: .5em;text-align: left; border-bottom:0px solid #ececec;line-height: 1.3;font-size: .9em;}@media (max-width: 549px){.tabbed-content .nav>li>a{font-size:10px}.tabbed-content .nav>li.active>a{font-size:12px}.post-item{flex-basis:50% !important}.bai-viet .row .medium-9 .row-xsmall>.col{padding: 0 5px 5px;}.footer-block .small-6{flex-basis: 100%; max-width:100%}.blog-single .large-9{padding-right:15px}.page-wrapper .large-3{padding-left:15px}.blog-archive .post-sidebar{padding-left:10px!important; padding-right:10px !important}.blog-archive .row-masonry .col{width:50%}#related_posts ul li{width:50%}@media(max-width:1024px){#menu{width:64%;}.mautin{font-size:21px;margin:20px 0px 10px 0px;}.mautin2{font-size:19px;margin:20px 0px 10px 0px;}.mautin3{font-size:20px;margin:20px 0px 10px 0px;}.top_nav .menu-item{font-size:13px;}aside.floating section.inside>a span{clear:both;display:block;width:100%;}}}.label-new.menu-item > a:after{content:"New";}.label-hot.menu-item > a:after{content:"Hot";}.label-sale.menu-item > a:after{content:"Sale";}.label-popular.menu-item > a:after{content:"Popular";}.label-new.menu-item > a:after{content:"New";}.label-hot.menu-item > a:after{content:"Hot";}.label-sale.menu-item > a:after{content:"Sale";}.label-popular.menu-item > a:after{content:"Popular";}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+
+<body class="post-template-default single single-post postid-6455 single-format-standard lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border">
+
+
+<a class="skip-link screen-reader-text" href="../kham-khao-noi-quy-bao-ve-toa-nha.html#main">Skip to content</a>
+
+<div id="wrapper">
+
+	
+	<header id="header" class="header has-sticky sticky-jump">
+		<div class="header-wrapper">
+			<div id="top-bar" class="header-top hide-for-sticky nav-dark flex-has-center">
+    <div class="flex-row container">
+      <div class="flex-col hide-for-medium flex-left">
+          <ul class="nav nav-left medium-nav-center nav-small  nav-divided">
+              <li class="html custom html_topbar_left"><marquee>An Toàn – Uy Tín – Chất Lượng – Hiệu Quả</marquee></li>          </ul>
+      </div>
+
+      <div class="flex-col hide-for-medium flex-center">
+          <ul class="nav nav-center nav-small  nav-divided">
+              <li class="html custom html_topbar_right"><div class="col-md-6 header-top-right">														 <ul>
+<li><i class="fa fa-phone" aria-hidden="true"></i> Hotline: 0964.414.388</li>							  <li><a href="mailto:baovebinhphuong.info@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Mail: baovebinhphuong.info@gmail.com </a></li>
+</ul>
+<div class="clearfix"></div>						
+</div></li>          </ul>
+      </div>
+
+      <div class="flex-col hide-for-medium flex-right">
+         <ul class="nav top-bar-nav nav-right nav-small  nav-divided">
+              <li class="html header-social-icons ml-0">
+	<div class="social-icons follow-icons" ><a href="https://www.facebook.com/songhoalong/" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook"><i class="icon-facebook" ></i></a><a href="/" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain  instagram tooltip" title="Follow on Instagram" aria-label="Follow on Instagram"><i class="icon-instagram" ></i></a><a href="/" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon plain  twitter tooltip" title="Follow on Twitter" aria-label="Follow on Twitter"><i class="icon-twitter" ></i></a><a href="mailto:baovebinhphuong.info@gmail.com" data-label="E-mail" rel="nofollow" class="icon plain  email tooltip" title="Send us an email" aria-label="Send us an email"><i class="icon-envelop" ></i></a><a href="" target="_blank" rel="noopener noreferrer nofollow"  data-label="Pinterest"  class="icon plain  pinterest tooltip" title="Follow on Pinterest" aria-label="Follow on Pinterest"><i class="icon-pinterest" ></i></a></div></li>          </ul>
+      </div>
+
+            <div class="flex-col show-for-medium flex-grow">
+          <ul class="nav nav-center nav-small mobile-nav  nav-divided">
+              <li class="html custom html_topbar_left"><marquee>An Toàn – Uy Tín – Chất Lượng – Hiệu Quả</marquee></li>          </ul>
+      </div>
+      
+    </div>
+</div>
+<div id="masthead" class="header-main nav-dark">
+      <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+          <!-- Logo -->
+          <div id="logo" class="flex-col logo">
+            <!-- Header logo -->
+<a href="../cong-ty-bao-ve-tot-nhat-tphcm/index.html" title="Công ty Bảo vệ Bình Phương - Cung cấp dịch vụ bảo vệ &amp; Vệ sĩ chuyên nghiệp" rel="home">
+    <img width="284" height="100" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20284%20100'%3E%3C/svg%3E" class="header_logo header-logo" alt="Công ty Bảo vệ Bình Phương" data-lazy-src="https://r2.easyimg.io/uopbk89mk/logo.png"/><noscript><img width="284" height="100" src="../wp-content/uploads/2023/08/logo-bao-ve-chuyen-nghiep-hcm.png" class="header_logo header-logo" alt="Công ty Bảo vệ Bình Phương"/></noscript><img  width="284" height="100" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20284%20100'%3E%3C/svg%3E" class="header-logo-dark" alt="Công ty Bảo vệ Bình Phương" data-lazy-src="https://r2.easyimg.io/uopbk89mk/logo.png"/><noscript><img  width="284" height="100" src="../wp-content/uploads/2023/08/logo-bao-ve-chuyen-nghiep-hcm.png" class="header-logo-dark" alt="Công ty Bảo vệ Bình Phương"/></noscript></a>
+          </div>
+
+          <!-- Mobile Left Elements -->
+          <div class="flex-col show-for-medium flex-left">
+            <ul class="mobile-nav nav nav-left ">
+              <li class="nav-icon has-icon">
+  		<a href="../kham-khao-noi-quy-bao-ve-toa-nha.html#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color="" class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
+		
+		  <i class="icon-menu" ></i>
+		  		</a>
+	</li>            </ul>
+          </div>
+
+          <!-- Left Elements -->
+          <div class="flex-col hide-for-medium flex-left
+            flex-grow">
+            <ul class="header-nav header-nav-main nav nav-left  nav-uppercase" >
+                          </ul>
+          </div>
+
+          <!-- Right Elements -->
+          <div class="flex-col hide-for-medium flex-right">
+            <ul class="header-nav header-nav-main nav nav-right  nav-uppercase">
+              <li id="menu-item-5867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5867 menu-item-design-default"><a href="../cong-ty-bao-ve-tot-nhat-tphcm/index.html" class="nav-top-link">Trang Chủ</a></li>
+<li id="menu-item-2107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2107 menu-item-design-default"><a href="../dich-vu-bao-ve-chung-cu/index.html" class="nav-top-link">GIỚI THIỆU</a></li>
+<li id="menu-item-5870" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5870 menu-item-design-default has-dropdown"><a href="../chuyen-muc/dich-vu/page/1/index.html" class="nav-top-link">Dịch vụ<i class="icon-angle-down" ></i></a>
+<ul class="sub-menu nav-dropdown nav-dropdown-default">
+	<li id="menu-item-5872" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5872"><a href="../dich-vu-bao-ve-nha-may-xi-nghiep.html">Dịch vụ bảo vệ nhà máy xí nghiệp</a></li>
+	<li id="menu-item-5877" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5877"><a href="../dich-vu-bao-ve-kho-hang.html">Dịch vụ bảo vệ kho hàng</a></li>
+	<li id="menu-item-5874" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5874"><a href="../dich-vu-bao-ve-benh-vien-phong-kham.html">Dịch vụ bảo vệ bệnh viện, phòng khám</a></li>
+	<li id="menu-item-5873" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5873"><a href="../dich-vu-bao-ve-shop-thoi-trang.html">Dịch vụ bảo vệ shop thời trang</a></li>
+	<li id="menu-item-5875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5875"><a href="../dich-vu-bao-ve-sieu-thi.html">Dịch vụ bảo vệ siêu thị và trung tâm thương mại</a></li>
+	<li id="menu-item-5876" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5876"><a href="../dich-vu-bao-ve-ngan-hang.html">Dịch vụ Bảo vệ ngân hàng</a></li>
+	<li id="menu-item-5879" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5879"><a href="../dich-vu-bao-ve-nha-rieng-biet-thu.html">Dịch vụ bảo vệ nhà riêng, biệt thự</a></li>
+	<li id="menu-item-5880" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5880"><a href="../dich-vu-bao-ve-cong-trinh-xay-dung.html">Dịch vụ bảo vệ công trình xây dựng</a></li>
+	<li id="menu-item-5881" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5881"><a href="../dich-vu-bao-ve-su-kien-le-hoi.html">Dịch vụ bảo vệ sự kiện, event, lể hội</a></li>
+	<li id="menu-item-5882" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5882"><a href="../dich-vu-bao-ve-ngay-tet.html">Dịch vụ bảo vệ ngày tết</a></li>
+	<li id="menu-item-5883" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5883"><a href="../dich-vu-bao-ve-toa-nha/index.html">Dịch vụ bảo vệ tòa nhà, chung cư</a></li>
+	<li id="menu-item-5884" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5884"><a href="../dich-vu-bao-ve-quan-cafe.html">Dịch vụ bảo vệ Quán cafe</a></li>
+	<li id="menu-item-5885" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5885"><a href="../dich-vu-bao-ve-khu-cong-nghiep.html">Dịch vụ bảo vệ Khu công nghiệp</a></li>
+	<li id="menu-item-6003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6003"><a href="../dich-vu-bao-ve-van-phong-cong-ty.html">Dịch vụ Bảo vệ Văn phòng Công ty</a></li>
+	<li id="menu-item-6004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6004"><a href="../dich-vu-bao-ve-giu-xe.html">Dịch vụ bảo vệ giữ xe</a></li>
+</ul>
+</li>
+<li id="menu-item-5891" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-5891 active menu-item-design-default"><a href="../chuyen-muc/tin-tuc/index.html" class="nav-top-link">TIN TỨC</a></li>
+<li id="menu-item-5868" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5868 menu-item-design-default"><a href="../bang-gia-thue-dich-vu-bao-ve.html" class="nav-top-link">BẢNG GIÁ THUÊ DỊCH VỤ BẢO VỆ</a></li>
+<li id="menu-item-5869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5869 menu-item-design-default"><a href="../index.html@p=5569" class="nav-top-link">HS NĂNG LỰC</a></li>
+<li id="menu-item-2104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2104 menu-item-design-default"><a href="../cong-ty-bao-ve-tai-tan-phu/index.html" class="nav-top-link">LIÊN HỆ</a></li>
+<li class="header-search header-search-dropdown has-icon has-dropdown menu-item-has-children">
+		<a href="../kham-khao-noi-quy-bao-ve-toa-nha.html#" aria-label="Search" class="is-small"><i class="icon-search" ></i></a>
+		<ul class="nav-dropdown nav-dropdown-default">
+	 	<li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative is-normal"><form method="get" class="searchform" action="../cong-ty-bao-ve-tot-nhat-tphcm/index.html" role="search">
+		<div class="flex-row relative">
+			<div class="flex-col flex-grow">
+	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Search&hellip;" />
+			</div>
+			<div class="flex-col">
+				<button type="submit" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+					<i class="icon-search" ></i>				</button>
+			</div>
+		</div>
+    <div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li>	</ul>
+</li>
+            </ul>
+          </div>
+
+          <!-- Mobile Right Elements -->
+          <div class="flex-col show-for-medium flex-right">
+            <ul class="mobile-nav nav nav-right ">
+                          </ul>
+          </div>
+
+      </div>
+     
+            <div class="container"><div class="top-divider full-width"></div></div>
+      </div><div id="wide-nav" class="header-bottom wide-nav hide-for-sticky hide-for-medium">
+    <div class="flex-row container">
+
+                        <div class="flex-col hide-for-medium flex-left">
+                <ul class="nav header-nav header-bottom-nav nav-left  nav-uppercase">
+                                    </ul>
+            </div>
+            
+            
+                        <div class="flex-col hide-for-medium flex-right flex-grow">
+              <ul class="nav header-nav header-bottom-nav nav-right  nav-uppercase">
+                   <li class="header-divider"></li>              </ul>
+            </div>
+            
+            
+    </div>
+</div>
+
+<div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div>		</div>
+	</header>
+
+	
+	<main id="main" class="">
+
+<div id="content" class="blog-wrapper blog-single page-wrapper">
+	
+
+<div class="row row-large row-divided ">
+
+	<div class="large-9 col">
+		
+
+
+<article id="post-6455" class="post-6455 post type-post status-publish format-standard has-post-thumbnail hentry category-tin-tuc">
+	<div class="article-inner ">
+		<header class="entry-header">
+	<div class="entry-header-text entry-header-text-top text-center">
+		<h6 class="entry-category is-xsmall">
+	<a href="../chuyen-muc/tin-tuc/index.html" rel="category tag">TIN TỨC</a></h6>
+
+<h1 class="entry-title">Tham khảo nội quy bảo vệ tòa nhà bạn nên biết</h1>
+<div class="entry-divider is-divider small"></div>
+
+	<div class="entry-meta uppercase is-xsmall">
+		<span class="posted-on">Posted on <a href="../kham-khao-noi-quy-bao-ve-toa-nha.html" rel="bookmark"><time class="entry-date published" datetime="2024-01-11T03:10:54+00:00">11 Tháng Một, 2024</time><time class="updated" datetime="2024-01-11T03:15:31+00:00">11 Tháng Một, 2024</time></a></span><span class="byline"> by <span class="meta-author vcard"><a class="url fn n" href="./index.html">baovebinhphuong</a></span></span>	</div>
+	</div>
+						<div class="entry-image relative">
+				<a href="../kham-khao-noi-quy-bao-ve-toa-nha.html">
+    <img width="700" height="350" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20350'%3E%3C/svg%3E" class="attachment-large size-large wp-post-image" alt="noi-quy-bao-ve-toa-nha" decoding="async" fetchpriority="high" data-lazy-srcset="https://anninhphuongdong.com/wp-content/uploads/2024/01/noi-quy-bao-ve-toa-nha.jpg 700w, https://anninhphuongdong.com/wp-content/uploads/2024/01/noi-quy-bao-ve-toa-nha-300x150.jpg 300w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" data-lazy-src="https://anninhphuongdong.com/wp-content/uploads/2024/01/noi-quy-bao-ve-toa-nha.jpg" /><noscript><img width="700" height="350" src="../wp-content/uploads/2024/01/noi-quy-bao-ve-toa-nha.jpg" class="attachment-large size-large wp-post-image" alt="noi-quy-bao-ve-toa-nha" decoding="async" fetchpriority="high" srcset="../wp-content/uploads/2024/01/noi-quy-bao-ve-toa-nha.jpg 700w, ../wp-content/uploads/2024/01/noi-quy-bao-ve-toa-nha-300x150.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" /></noscript></a>
+				<div class="badge absolute top post-date badge-outline">
+	<div class="badge-inner">
+		<span class="post-date-day">11</span><br>
+		<span class="post-date-month is-small">Th1</span>
+	</div>
+</div>			</div>
+			</header>
+		<div class="entry-content single-page">
+
+	<p><span style="color: #282828;">Những nội quy khi bảo vệ tòa nhà: Để giúp cho việc đảm bảo tính an toàn và an ninh của tòa nhà, cũng như giữ an toàn về người và tài sản cho nhân viên và khách hàng. Những nội quy bảo vệ sẽ được các nhân viên bảo vệ nghiêm túc chấp hành. Khi xảy ra các sai sót không thực hiện thì nhân viên bảo vệ đó sẽ phải nhận sự khiển trách và sẽ bị xử lý của cán bộ quản lý. Vậy <strong>nội quy bảo vệ tòa nhà</strong> cụ thể là gì ? Nội dung của nội quy này ra sao ? Cùng chúng tôi tìm hiểu với bài viết dưới đây nhé !</span></p>
+<h2><span class="ez-toc-section" id="Khai_niem_bao_ve_toa_nha_va_muc_dich_cua_bao_ve_toa_nha"></span><span style="color: #000080;">Khái niệm bảo vệ tòa nhà và mục đích của bảo vệ tòa nhà ?</span><span class="ez-toc-section-end"></span></h2><div id="ez-toc-container" class="ez-toc-v2_0_51_1 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title " >Mục lục</p>
+<span class="ez-toc-title-toggle"><a href="../kham-khao-noi-quy-bao-ve-toa-nha.html#" class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle" aria-label="Toggle Table of Content" role="button"><label for="item-65dbfa3e36d2c" ><span class=""><span style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input aria-label="Toggle" aria-label="item-65dbfa3e36d2c"  type="checkbox" id="item-65dbfa3e36d2c"></a></span></div>
+<nav><ul class='ez-toc-list ez-toc-list-level-1 eztoc-visibility-hide-by-default' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="../kham-khao-noi-quy-bao-ve-toa-nha.html#Khai_niem_bao_ve_toa_nha_va_muc_dich_cua_bao_ve_toa_nha" title="Khái niệm bảo vệ tòa nhà và mục đích của bảo vệ tòa nhà ?">Khái niệm bảo vệ tòa nhà và mục đích của bảo vệ tòa nhà ?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="../kham-khao-noi-quy-bao-ve-toa-nha.html#Tim_hieu_ve_noi_dung_cua_noi_quy_bao_ve_toa_nha" title="Tìm hiểu về nội dung của nội quy bảo vệ tòa nhà">Tìm hiểu về nội dung của nội quy bảo vệ tòa nhà</a><ul class='ez-toc-list-level-3'><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="../kham-khao-noi-quy-bao-ve-toa-nha.html#Noi_quy_thuc_hien_nhiem_vu_cong_viec" title="Nội quy thực hiện nhiệm vụ, công việc">Nội quy thực hiện nhiệm vụ, công việc</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="../kham-khao-noi-quy-bao-ve-toa-nha.html#Noi_quy_ve_trang_phuc_va_tac_phong_lam_viec_cua_moi_nhan_vien" title="Nội quy về trang phục và tác phong làm việc của mỗi nhân viên">Nội quy về trang phục và tác phong làm việc của mỗi nhân viên</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="../kham-khao-noi-quy-bao-ve-toa-nha.html#Noi_quy_ve_thai_do_cua_tung_nhan_vien" title="Nội quy về thái độ của từng nhân viên">Nội quy về thái độ của từng nhân viên</a></li></ul></li></ul></nav></div>
+
+<p><span style="color: #282828;">Việc bảo vệ tòa nhà có thể được bảo vệ và thực hiện các công việc an ninh khác nhau nhằm đảm bảo cho tòa nhà luôn được an toàn nhất. Mục đích chính của việc bảo vệ là nhằm đảm bảo sự an toàn về người và tài sản trong tòa nhà. Đây cũng có thể cho là một trong những lực lượng quan trọng trong việc duy trì và gìn giữ an ninh trật tự của tòa nhà và khu vực xung quanh.</span></p>
+<p><span style="color: #282828;">Các tòa nhà cần được bảo vệ có thể là văn phòng hoặc các khu chung cư, những nơi này có đặc điểm chung là nơi có nhiều người thường xuyên qua lại, vận chuyển hàng hóa. Hơn nữa, bên trong của chính những tòa nhà đó có chứa nhiều hàng hóa có giá trị lớn. Vậy nên, những tòa nhà này là một trong những địa điểm mà kẻ xấu luôn nhắm đến.</span></p>
+<p><span style="color: #282828;">Bởi những lý do đó mà bất kỳ tòa nhà nào cũng cần có đội ngũ bảo vệ có chuyên môn để có thể duy trì và giữ gìn an ninh trật tự, giám sát sự ra vào và việc vận chuyển hàng hóa nơi đây. Ngoài việc giữ gìn an ninh, trật tự và đảm bảo sự an toàn về người và tài sản thì khi <span style="color: #0000ff;"><a style="color: #0000ff;" href="../bang-gia-thue-dich-vu-bao-ve.html">thuê dịch vụ bảo vệ</a></span> có một số mục đích sau:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Có thể hỗ trợ thực hiện công tác phòng cháy chữa cháy, hỗ trợ việc cứu hộ cứu nạn trong trường hợp có hỏa hoạn hoặc các trường hợp tai nạn khác.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Luôn luôn kiểm tra giám sát và ngăn chặn kịp thời các hành vi xâm phạm bất hợp pháp, các hành vi trộm cắp tài sản trong các tòa nhà.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Có thể giúp hòa giải và hạn chế các hoạt động gây rối trật tự tại khu vực trong và ngoài tòa nhà.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Có thể hỗ trợ duy trì, đảm bảo việc thực hiện đúng quy định và nội quy bảo vệ tòa nhà hoặc các công ty có trụ sở trong tòa nhà.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Có thể thực hiện kiểm tra, kiểm soát hàng hóa ra vào tòa nhà để tránh sự thất thoát hoặc có thể hạn chế đưa các loại hàng hóa cấm vào tòa nhà.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Có thể phối hợp với các tổ chức an ninh, dân sự, cơ quan chức năng để xử lý các vấn đề, tình huống phức tạp xảy ra.</span></li>
+</ul>
+<h2><span class="ez-toc-section" id="Tim_hieu_ve_noi_dung_cua_noi_quy_bao_ve_toa_nha"></span><span style="color: #000080;">Tìm hiểu về nội dung của nội quy bảo vệ tòa nhà</span><span class="ez-toc-section-end"></span></h2>
+<p><span style="color: #282828;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="../kham-khao-noi-quy-bao-ve-toa-nha.html"><strong>Nội quy bảo vệ tòa nhà</strong></a></span> là một nội quy bắt buộc mà mỗi một nhân viên bảo vệ cần phải tuân thủ. Nội quy này bao gồm nội quy làm việc chung của bảo vệ kết hợp với những ý kiến, yêu cầu của tòa nhà cần được bảo vệ.</span></p>
+<p><span style="color: #282828;">Vậy nên, mẫu nội quy này sẽ có sự khác nhau của mỗi tòa nhà cần bảo vệ. Tuy vậy, <strong>nội quy bảo vệ tòa nhà</strong> bao gồm một số nội dung chính sau:</span></p>
+<h3><span class="ez-toc-section" id="Noi_quy_thuc_hien_nhiem_vu_cong_viec"></span><span style="color: #000080;"><i>Nội quy thực hiện nhiệm vụ, công việc</i></span><span class="ez-toc-section-end"></span></h3>
+<p><span style="color: #282828;">Đối với nội dung của nội quy này đó là quy định những việc mà nhân viên bảo vệ cần thực hiện đúng hoặc không được thực hiện trong quá trình làm nhiệm vụ tại tòa nhà. một vài nội dung cơ bản bao gồm:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Cần phải chấp hành nghiêm túc, đầy đủ các nội quy, quy định của tòa nhà.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Nhân viên bảo vệ luôn đến đúng giờ và cần phải có mặt trước 15p để thực hiện bàn giao ca trực.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Luôn phải chú ý quan sát, giám sát, cần phải đảm bảo an toàn, an ninh của tòa nhà, khách hàng đến liên hệ công việc và nhân viên đến làm việc.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Lực lượng bảo vệ thực hiện việc ngăn chặn những hư hỏng có thể xảy ra đối với tài sản trong tòa nhà.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Luôn quan sát và cần chú ý đến bất kỳ các hoạt động ra vào tòa nhà để tránh các tình huống bất ngờ có thể xảy ra.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Nhân viên bảo vệ không được tự ý bỏ ca trực hoặc rời khỏi vị trí trực khi chưa có người thay thế.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Bảo mật tuyệt đối các thông tin liên quan đến khách hàng, nhân viên, tòa nhà và các công việc có liên quan.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Không được xâm phạm đến thư tín, bưu kiện hoặc bưu phẩm được gửi đến tòa nhà.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Các nhân viên phải luôn ghi chép lại các sự việc diễn ra trong ca trực trước khi bàn giao ca cho người khác.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Phải luôn đảm bảo các phương tiện lưu thông tại tòa nhà.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Cần chú ý sắp xếp các xe an toàn và cần đề phòng các trường hợp hư hại, mất mát trong khu vực giữ xe.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Cần giữ gìn sạch sẽ khu vực giữ xe, sảnh chính và các khu vực cần bảo vệ khác của tòa nhà được bảo vệ.</span></li>
+</ul>
+<h3><span class="ez-toc-section" id="Noi_quy_ve_trang_phuc_va_tac_phong_lam_viec_cua_moi_nhan_vien"></span><span style="color: #000080;"><i>Nội quy về trang phục và tác phong làm việc của mỗi nhân viên</i></span><span class="ez-toc-section-end"></span></h3>
+<p><span style="color: #282828;">Đối với nội quy này thì đó là quy định bắt buộc với mỗi nhân viên về trang phục được mang và các yêu cầu về tác phong khi thực hiện nhiệm vụ bảo vệ tòa nhà. Trong đó có một vài nội dung cơ bản là:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Các nhân viên bảo vệ phải luôn mặc đúng trang phục theo quy định của công ty. Phải giữ gìn các trang phục gọn gàng, sạch đẹp không được nhàu nát hay ố bẩn.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Các nhân viên bảo vệ phải luôn đeo bảng tên, mũ, nón ( nếu có) theo quy định của công ty.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Với mỗi nhân viên thì đầu tóc phải cắt gọn gàng, không được để râu, ria mép đối với nam giới. Còn đối với nữ giới thì không được đeo trang sức và sơn móng tay.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Nghiêm cấm ngủ gật trong thi thực hiện nhiệm vụ và sử dụng các chất có cồn, có tác phong làm việc nhanh nhẹn, cẩn thận nhiệt tình và chu đáo.</span></li>
+</ul>
+<p><span style="color: #282828;">Và còn nhiều các quy định khác về trang phục, tác phong làm việc tùy theo từng công ty, tòa nhà.</span></p>
+<h3><span class="ez-toc-section" id="Noi_quy_ve_thai_do_cua_tung_nhan_vien"></span><span style="color: #000080;"><i>Nội quy về thái độ của từng nhân viên</i></span><span class="ez-toc-section-end"></span></h3>
+<p><span style="color: #282828;">Còn nội quy này thì quy định về thái độ khi làm việc, giao tiếp với khách hàng, đồng nghiệp, lãnh đạo nhằm mục đích thể hiện tính chuyên nghiệp, lịch sự, văn minh của từng nhân viên. Gồm một vài nội dung cơ bản như sau:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Các nhân viên không được phát ngôn bừa bãi, không được nói tục hay chửi thề trong khi làm việc. Phải luôn tôn trọng đồng nghiệp khách hàng.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Phải có thái độ niềm nở chào đón khách hàng, hòa nhã với đồng nghiệp và các nhân viên khác.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Các nhân viên không được có những lời nói gây mất đoàn kết, chia rẽ nội bộ của công ty hay tòa nhà được bảo vệ.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="color: #282828;">Với mỗi nhân viên cần luôn cẩn trọng, bình tĩnh xử lý các tình huống bất ngờ, dũng cảm, mưu trí nhưng đúng quy định, pháp luật.</span></li>
+</ul>
+<p><span style="color: #282828;">Và còn nhiều các quy định khác về thái độ làm việc của từng nhân viên mà công ty hay tòa nhà có yêu cầu.</span></p>
+<figure id="attachment_5635" aria-describedby="caption-attachment-5635" style="width: 700px" class="wp-caption aligncenter"><img decoding="async" class="wp-image-5635 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20400'%3E%3C/svg%3E" alt="dich-vu-bao-ve-toa-nha-chung-cu" width="700" height="400" data-lazy-srcset="https://anninhphuongdong.com/wp-content/uploads/2020/11/dich-vu-bao-ve-toa-nha-chung-cu-1.jpg 700w, https://anninhphuongdong.com/wp-content/uploads/2020/11/dich-vu-bao-ve-toa-nha-chung-cu-1-300x171.jpg 300w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" data-lazy-src="https://anninhphuongdong.com/wp-content/uploads/2020/11/dich-vu-bao-ve-toa-nha-chung-cu-1.jpg" /><noscript><img decoding="async" class="wp-image-5635 size-full" src="../wp-content/uploads/2020/11/dich-vu-bao-ve-toa-nha-chung-cu-1.jpg" alt="dich-vu-bao-ve-toa-nha-chung-cu" width="700" height="400" srcset="../wp-content/uploads/2020/11/dich-vu-bao-ve-toa-nha-chung-cu-1.jpg 700w, ../wp-content/uploads/2020/11/dich-vu-bao-ve-toa-nha-chung-cu-1-300x171.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" /></noscript><figcaption id="caption-attachment-5635" class="wp-caption-text">Bình Phương &#8211; Công ty cho thuê dịch vụ bảo vệ tòa nhà chung cư chuyên nghiệp</figcaption></figure>
+<p><span style="color: #282828;">Việc thực hiện <strong>nội quy bảo vệ tòa nhà</strong> là cơ sở, tiền đề để nâng cao hiệu quả bảo vệ của tòa nhà. Đối với mỗi một nhân viên bảo vệ cần phải nghiêm túc chấp hành các nội quy trên nhằm đảm bảo an ninh, trật tự an toàn của tòa nhà, chung cư. Hi vọng những thông tin hữu ích trên mà chúng tôi vừa mới chia sẻ sẽ giúp bạn đánh giá và lựa chọn được đơn vị bảo vệ uy tín và phù hợp cho công ty hay tòa nhà của mình.</span></p>
+<p><span style="color: #282828;">Mọi thông tin cần thuê <span style="color: #0000ff;"><a style="color: #0000ff;" href="../dich-vu-bao-ve-toa-nha/index.html">dịch vụ bảo vệ tòa nhà</a></span> chuyên nghiệp quý vị có thể liên hệ ngay với chúng Tôi &#8211; Bình Phương công ty cho thuê bảo vệ tòa nhà chuyên nghiệp nhất hiện nay nên chọn.</span></p>
+<p><span style="color: #282828;"><strong>THÔNG TIN LIÊN HỆ</strong></span></p>
+<p><span style="color: #333333;"><strong>CÔNG TY  CỔ PHẦN DVBV Bình Phương GROUP</strong></span></p>
+<p><span style="color: #282828;"><strong><span style="color: #0000ff;">Trụ Sở Chính: </span>F1/1D đường số 1, KDC Đồng Danh, Vĩnh Lộc A, Bình Chánh, TP.Hồ Chí Minh</strong></span></p>
+<p><span style="color: #282828;"><strong><span style="color: #0000ff;">Hotline:</span> <span style="color: #ed1c24;">0964.414.388 </span></strong></span></p>
+<p><span style="color: #0000ff;"><strong>Website: </strong><span style="color: #3366ff;">https://anninhphuongdong.com/</span></span></p>
+<p><span style="color: #0000ff;"><strong>Fanpage:</strong> <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.facebook.com/songhoalong" target="_blank" rel="noopener">baovesonghoalong</a></span></span></p>
+
+	
+	<div class="blog-share text-center" style="display:none"><div class="is-divider medium"></div><div class="social-icons share-icons share-row relative" ><a href="whatsapp://send?text=Tham%20kh%E1%BA%A3o%20n%E1%BB%99i%20quy%20b%E1%BA%A3o%20v%E1%BB%87%20t%C3%B2a%20nh%C3%A0%20b%E1%BA%A1n%20n%C3%AAn%20bi%E1%BA%BFt - https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/" data-action="share/whatsapp/share" class="icon button circle is-outline tooltip whatsapp show-for-medium" title="Share on WhatsApp" aria-label="Share on WhatsApp"><i class="icon-whatsapp"></i></a><a href="/noi-quy-bao-ve-toa-nha/" data-label="Facebook" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon button circle is-outline tooltip facebook" title="Share on Facebook" aria-label="Share on Facebook"><i class="icon-facebook" ></i></a><a href="/noi-quy-bao-ve-toa-nha/" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon button circle is-outline tooltip twitter" title="Share on Twitter" aria-label="Share on Twitter"><i class="icon-twitter" ></i></a><a href="mailto:baovebinhphuong.info@gmail.com?subject=Tham%20kh%E1%BA%A3o%20n%E1%BB%99i%20quy%20b%E1%BA%A3o%20v%E1%BB%87%20t%C3%B2a%20nh%C3%A0%20b%E1%BA%A1n%20n%C3%AAn%20bi%E1%BA%BFt&amp;body=Check%20this%20out:%20https://baovebinhphuong.com/noi-quy-bao-ve-toa-nha/" rel="nofollow" class="icon button circle is-outline tooltip email" title="Email to a Friend" aria-label="Email to a Friend"><i class="icon-envelop" ></i></a><a href="https://pinterest.com/pin/create/button/?url=https://baovebinhphuong.com/noi-quy-bao-ve-toa-nha/&amp;media=https://anninhphuongdong.com/wp-content/uploads/2024/01/noi-quy-bao-ve-toa-nha.jpg&amp;description=Tham%20kh%E1%BA%A3o%20n%E1%BB%99i%20quy%20b%E1%BA%A3o%20v%E1%BB%87%20t%C3%B2a%20nh%C3%A0%20b%E1%BA%A1n%20n%C3%AAn%20bi%E1%BA%BFt" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon button circle is-outline tooltip pinterest" title="Pin on Pinterest" aria-label="Pin on Pinterest"><i class="icon-pinterest" ></i></a><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://anninhphuongdong.com/noi-quy-bao-ve-toa-nha/&title=Tham%20kh%E1%BA%A3o%20n%E1%BB%99i%20quy%20b%E1%BA%A3o%20v%E1%BB%87%20t%C3%B2a%20nh%C3%A0%20b%E1%BA%A1n%20n%C3%AAn%20bi%E1%BA%BFt" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"  rel="noopener noreferrer nofollow" target="_blank" class="icon button circle is-outline tooltip linkedin" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="icon-linkedin" ></i></a></div></div></div>
+
+	<footer class="entry-meta text-center" style="margin-top: 30px;">
+		This entry was posted in <a href="../chuyen-muc/tin-tuc/index.html" rel="category tag">TIN TỨC</a>. Bookmark the <a href="../kham-khao-noi-quy-bao-ve-toa-nha.html" title="Permalink to Tham khảo nội quy bảo vệ tòa nhà bạn nên biết" rel="bookmark">permalink</a>.	</footer>
+
+	<div class="entry-author author-box">
+		<div class="flex-row align-top">
+			<div class="flex-col mr circle">
+				<div class="blog-author-image">
+									</div>
+			</div>
+			<div class="flex-col flex-grow">
+				<h5 class="author-name uppercase pt-half">
+					baovesonghoalong				</h5>
+				<p class="author-desc small">Tôi là Phương - CEO  Công ty Bảo vệ chuyên nghiệp Bình Phương. Công ty chuyên cung cấp cho thuê dịch vụ bảo vệ &amp; vệ sĩ chuyên nghiệp nhất hiện nay.</p>
+			</div>
+		</div>
+	</div>
+
+        <nav role="navigation" id="nav-below" class="navigation-post">
+	<div class="flex-row next-prev-nav bt bb">
+		<div class="flex-col flex-grow nav-prev text-left">
+			    <div class="nav-previous"><a href="../index.html@p=6435" rel="prev"><span class="hide-for-small"><i class="icon-angle-left" ></i></span> Bản mô tả công việc của bảo vệ công ty chi tiết nhất</a></div>
+		</div>
+		<div class="flex-col flex-grow nav-next text-right">
+			    <div class="nav-next"><a href="../cac-buoc-trong-quy-trinh-xu-ly-su-co-toa-nha.html" rel="next">Các bước trong quy trình xử lý sự cố tòa nhà chi tiết nhất <span class="hide-for-small"><i class="icon-angle-right" ></i></span></a></div>		</div>
+	</div>
+
+	    </nav>
+
+    	</div>
+</article>
+
+
+
+
+<div id="comments" class="comments-area">
+
+	
+	
+	
+	
+</div>
+	</div>
+	<div class="post-sidebar large-3 col">
+				<div id="secondary" class="widget-area " role="complementary">
+		
+		<aside id="recent-posts-2" class="widget widget_recent_entries">
+		<span class="widget-title "><span>Bài viết mới</span></span><div class="is-divider small"></div>
+		<ul>
+											<li>
+					<a href="../cong-ty-bao-ve-o-binh-phuoc.html">công ty bảo vệ ở bình phước</a>
+									</li>
+											<li>
+					<a href="../noi-quy-bao-ve-nha-may-xi-nghiep.html">Nội quy bảo vệ nhà máy xí nghiệp I Bạn nên biết</a>
+									</li>
+											<li>
+					<a href="../cach-xu-ly-khi-bi-trom-vao-nha.html">Cách xử lý khi bị trộm vào nhà mà bạn nên biết</a>
+									</li>
+											<li>
+					<a href="../cac-tinh-huong-an-ninh-trong-khach-san.html">Các tình huống an ninh trong khách sạn</a>
+									</li>
+											<li>
+					<a href="../ban-mo-ta-cong-viec-bao-ve-khach-san.html">Bản mô tả công việc bảo vệ khách sạn chi tiết nhất</a>
+									</li>
+											<li>
+					<a href="../quy-trinh-lam-viec-cua-bao-ve-nha-hang.html">Tham khảo ngay quy trình làm việc của bảo vệ nhà hàng</a>
+									</li>
+											<li>
+					<a href="../cac-buoc-trong-quy-trinh-xu-ly-su-co-toa-nha.html">Các bước trong quy trình xử lý sự cố tòa nhà chi tiết nhất</a>
+									</li>
+											<li>
+					<a href="../kham-khao-noi-quy-bao-ve-toa-nha.html" aria-current="page">Tham khảo nội quy bảo vệ tòa nhà bạn nên biết</a>
+									</li>
+											<li>
+					<a href="../index.html@p=6435">Bản mô tả công việc của bảo vệ công ty chi tiết nhất</a>
+									</li>
+											<li>
+					<a href="../dich-vu-bao-ve-tai-binh-duong.html">Cập nhật Báo Giá Dịch Vụ Bảo Vệ Bình Dương</a>
+									</li>
+					</ul>
+
+		</aside></div>
+			</div>
+</div>
+
+</div>
+
+
+</main>
+
+<footer id="footer" class="footer-wrapper">
+
+	
+<!-- FOOTER 1 -->
+<div class="footer-widgets footer footer-1">
+		<div class="row dark large-columns-3 mb-0">
+	   		<div id="text-3" class="col pb-0 widget widget_text"><span class="widget-title">THÔNG TIN LIÊN HỆ</span><div class="is-divider small"></div>			<div class="textwidget"><h4><strong>CÔNG TY  CỔ PHẦN DVBV Bình Phương GROUP</strong></h4>
+<p><strong>Trụ Sở Chính</strong>: <strong>F1/1D đường số 1, KDC Đồng Danh, Vĩnh Lộc A, Bình Chánh, TP.Hồ Chí Minh</strong></p>
+<p><strong>Hotline: 0964.414.388  </strong></p>
+<p><strong>Email:</strong> baovebinhphuong.info@gmail.com</p>
+<p><strong>Website:</strong> <a href="../cong-ty-bao-ve-tot-nhat-tphcm/index.html">https://baovebinhphuong.com</a></p>
+<p><strong>Fanpage:</strong> <a href="https://www.facebook.com/songhoalong">baovesonghoalong </a></p>
+</div>
+		</div><div id="text-5" class="col pb-0 widget widget_text"><span class="widget-title">DỊCH VỤ BẢO VỆ CÁC TỈNH</span><div class="is-divider small"></div>			<div class="textwidget"><p><a href="../dich-vu-bao-ve-tai-binh-duong.html">Dịch vụ Bảo vệ tại Bình Dương</a></p>
+<p><a href="../dich-vu-bao-ve-tai-dong-nai.html">Dịch vụ Bảo vệ tại Đồng Nai</a></p>
+<p><a href="../dich-vu-bao-ve-tai-bien-hoa.html">Dịch vụ bảo vệ tại Biên Hòa</a></p>
+<p><a href="../dich-vu-bao-ve-tai-tay-ninh.html">Dịch vụ Bảo vệ tại Tây Ninh</a></p>
+<p><a href="../gia-thue-bao-ve-tai-long-an/index.html">Dịch vụ Bảo vệ tại Long An</a></p>
+<p><a href="../dich-vu-bao-ve-tai-duc-hoa.html">Dịch vụ bảo vệ tại Đức Hòa</a></p>
+</div>
+		</div><div id="text-15" class="col pb-0 widget widget_text"><span class="widget-title">BÁO GIÁ DỊCH VỤ BẢO VỆ</span><div class="is-divider small"></div>			<div class="textwidget"><p><a href="../index.html@p=5826">Bảng giá thuê Vệ Sĩ</a></p>
+<p><a href="../bang-gia-thue-dich-vu-bao-ve.html">Báo giá dịch vụ bảo vệ</a></p>
+<p><a href="../bao-ve-giu-xe.html">Giá thuê Bảo vệ Giữ xe</a></p>
+<p><a href="../bao-ve-su-kien.html">Giá thuê Bảo vệ Sự Kiện</a></p>
+<p><a href="../bao-ve-truc-dem.html">Giá thuê bảo vệ trực đêm</a></p>
+</div>
+		</div><div id="custom_html-3" class="widget_text col pb-0 widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://www.dmca.com/Protection/Status.aspx?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98" title="DMCA.com Protection Status" class="dmca-badge"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"  alt="DMCA.com Protection Status" data-lazy-src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98" /><noscript><img src ="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98"  alt="DMCA.com Protection Status" /></noscript></a>  <script type="rocketlazyloadscript" data-minify="1" src="../wp-content/cache/min/1/Badges/DMCABadgeHelper.min.js@ver=1708586048" defer> </script></div></div>        
+		</div>
+</div>
+
+<!-- FOOTER 2 -->
+
+
+
+<div class="absolute-footer dark medium-text-center text-center">
+  <div class="container clearfix">
+
+    
+    <div class="footer-primary pull-left">
+            <div class="copyright-footer">
+        Copyright 2024 © <strong>Bình Phương</strong>      </div>
+          </div>
+  </div>
+</div>
+
+<a href="../kham-khao-noi-quy-bao-ve-toa-nha.html#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline left hide-for-medium circle" id="top-link" aria-label="Go to top"><i class="icon-angle-up" ></i></a>
+
+</footer>
+
+</div>
+
+<div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+	<div class="sidebar-menu no-scrollbar ">
+		<ul class="nav nav-sidebar nav-vertical nav-uppercase">
+			<li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative is-normal"><form method="get" class="searchform" action="../cong-ty-bao-ve-tot-nhat-tphcm/index.html" role="search">
+		<div class="flex-row relative">
+			<div class="flex-col flex-grow">
+	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Search&hellip;" />
+			</div>
+			<div class="flex-col">
+				<button type="submit" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+					<i class="icon-search" ></i>				</button>
+			</div>
+		</div>
+    <div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5867"><a href="../cong-ty-bao-ve-tot-nhat-tphcm/index.html">Trang Chủ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2107"><a href="../dich-vu-bao-ve-chung-cu/index.html">GIỚI THIỆU</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5870"><a href="../chuyen-muc/dich-vu/page/1/index.html">Dịch vụ</a>
+<ul class="sub-menu nav-sidebar-ul children">
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5872"><a href="../dich-vu-bao-ve-nha-may-xi-nghiep.html">Dịch vụ bảo vệ nhà máy xí nghiệp</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5877"><a href="../dich-vu-bao-ve-kho-hang.html">Dịch vụ bảo vệ kho hàng</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5874"><a href="../dich-vu-bao-ve-benh-vien-phong-kham.html">Dịch vụ bảo vệ bệnh viện, phòng khám</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5873"><a href="../dich-vu-bao-ve-shop-thoi-trang.html">Dịch vụ bảo vệ shop thời trang</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5875"><a href="../dich-vu-bao-ve-sieu-thi.html">Dịch vụ bảo vệ siêu thị và trung tâm thương mại</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5876"><a href="../dich-vu-bao-ve-ngan-hang.html">Dịch vụ Bảo vệ ngân hàng</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5879"><a href="../dich-vu-bao-ve-nha-rieng-biet-thu.html">Dịch vụ bảo vệ nhà riêng, biệt thự</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5880"><a href="../dich-vu-bao-ve-cong-trinh-xay-dung.html">Dịch vụ bảo vệ công trình xây dựng</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5881"><a href="../dich-vu-bao-ve-su-kien-le-hoi.html">Dịch vụ bảo vệ sự kiện, event, lể hội</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5882"><a href="../dich-vu-bao-ve-ngay-tet.html">Dịch vụ bảo vệ ngày tết</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5883"><a href="../dich-vu-bao-ve-toa-nha/index.html">Dịch vụ bảo vệ tòa nhà, chung cư</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5884"><a href="../dich-vu-bao-ve-quan-cafe.html">Dịch vụ bảo vệ Quán cafe</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5885"><a href="../dich-vu-bao-ve-khu-cong-nghiep.html">Dịch vụ bảo vệ Khu công nghiệp</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6003"><a href="../dich-vu-bao-ve-van-phong-cong-ty.html">Dịch vụ Bảo vệ Văn phòng Công ty</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6004"><a href="../dich-vu-bao-ve-giu-xe.html">Dịch vụ bảo vệ giữ xe</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-5891"><a href="../chuyen-muc/tin-tuc/index.html">TIN TỨC</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5868"><a href="../bang-gia-thue-dich-vu-bao-ve.html">BẢNG GIÁ THUÊ DỊCH VỤ BẢO VỆ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5869"><a href="../index.html@p=5569">HS NĂNG LỰC</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2104"><a href="../cong-ty-bao-ve-tai-tan-phu/index.html">LIÊN HỆ</a></li>
+<li class="header-newsletter-item has-icon">
+
+  <a href="../kham-khao-noi-quy-bao-ve-toa-nha.html#header-newsletter-signup" class="tooltip" title="Sign up for Newsletter">
+
+    <i class="icon-envelop"></i>
+    <span class="header-newsletter-title">
+      Newsletter    </span>
+  </a>
+
+</li><li class="html header-social-icons ml-0">
+	<div class="social-icons follow-icons" ><a href="https://www.facebook.com/songhoalong/" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook"><i class="icon-facebook" ></i></a><a href="/" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain  instagram tooltip" title="Follow on Instagram" aria-label="Follow on Instagram"><i class="icon-instagram" ></i></a><a href="/" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon plain  twitter tooltip" title="Follow on Twitter" aria-label="Follow on Twitter"><i class="icon-twitter" ></i></a><a href="mailto:baovebinhphuong.info@gmail.com" data-label="E-mail" rel="nofollow" class="icon plain  email tooltip" title="Send us an email" aria-label="Send us an email"><i class="icon-envelop" ></i></a><a href="" target="_blank" rel="noopener noreferrer nofollow"  data-label="Pinterest"  class="icon plain  pinterest tooltip" title="Follow on Pinterest" aria-label="Follow on Pinterest"><i class="icon-pinterest" ></i></a></div></li><li class="html custom html_topbar_right"><div class="col-md-6 header-top-right">														 <ul>
+<li><i class="fa fa-phone" aria-hidden="true"></i> Hotline: 0964.414.388</li>							  <li><a href="mailto:baovebinhphuong.info@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Mail: baovebinhphuong.info@gmail.com </a></li>
+</ul>
+<div class="clearfix"></div>						
+</div></li>Bảo vệ Bình Phương</ul>
+	</div>
+</div>
+<style>.ates-cb-hotline-wrap{left:0;}</style><div onclick="window.location.href='tel:0964414388'" class="ates-cb-hotline-wrap">
+		<div class="ates-cb-hotline">
+			<div class="ates-cb-hotline-circle"></div>
+			<div class="ates-cb-hotline-circle-fill"></div>
+			<div class="ates-cb-hotline-img-circle">
+				<a href="tel:0964414388" class="ates-btn-img">
+					<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%200'%3E%3C/svg%3E" alt="Phone" width="50" data-lazy-src="https://anninhphuongdong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png"><noscript><img src="https://anninhphuongdong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png" alt="Phone" width="50"></noscript>
+				</a>
+			</div>
+		</div>
+
+		<div class="ates-cb-hotline-bar">
+			<a href="tel:0964414388">
+				<span class="ates-cb-hotline-text">0964.414.388</span>
+			</a>
+		</div>
+	</div><style>.inner-fabs.show .fab::before{display:none;}</style><div id="ates-contact-buttons" class="inner-fabs show"><a target="blank" href="https://zalo.me/0964414388" class="fab roundCool" id="chat-fab" data-tooltip="Nhắn tin Zalo">
+		<img class="inner-fab-icon" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Zalo" border="0" data-lazy-src="https://anninhphuongdong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" /><noscript><img class="inner-fab-icon" src="https://anninhphuongdong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" alt="Zalo" border="0" /></noscript>
+  </a></div>
+
+<div onclick="ates_contact_buttons();" class="fab roundCool call-animation" id="main-fab">
+	<img class="img-circle" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20135%200'%3E%3C/svg%3E" alt="ClickMe" width="135" data-lazy-src="https://anninhphuongdong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" /><noscript><img class="img-circle" src="https://anninhphuongdong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" alt="ClickMe" width="135" /></noscript>
+</div><div id="ates-cb-popup" class="ates-cb-popup">
+		<div class="ates-cb-popup-content">
+			<div class="ates-cb-popup-header">
+				<strong style="color:midnightblue;">Yêu câu gọi lại tư vấn</strong>
+				<span onclick="ates_cb_popup()" class="ates-cb-popup-close">&times;</span>
+			</div><br />
+			
+			<div class="ates-cb-popup-body"></div>
+			
+			<div class="ates-cb-popup-footer"></div>
+		</div>
+	</div><style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer='defer' src="../wp-content/cache/min/1/wp-content/plugins/ates-contact-buttons/VanToanDevSEO/AtesVN-Contact-Buttons-App.js@ver=1708586048" id="atesvn-contact-buttons-script-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer='defer' src="../wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/swv/js/index.js@ver=1708586048" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/anninhphuongdong.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer='defer' src="../wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js@ver=1708586048" id="contact-form-7-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/anninhphuongdong.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer='defer' src="https://anninhphuongdong.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer='defer' src="https://anninhphuongdong.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer='defer' src="https://anninhphuongdong.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer='defer' src="https://anninhphuongdong.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2" id="hoverIntent-js"></script>
+<script type="text/javascript" id="flatsome-js-js-extra">
+/* <![CDATA[ */
+var flatsomeVars = {"ajaxurl":"https:\/\/anninhphuongdong.com\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"70","assets_url":"https:\/\/anninhphuongdong.com\/wp-content\/themes\/flatsome\/assets\/js\/","lightbox":{"close_markup":"<button title=\"%title%\" type=\"button\" class=\"mfp-close\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"><\/line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"><\/line><\/svg><\/button>","close_btn_inside":false},"user":{"can_edit_pages":false},"i18n":{"mainMenu":"Main Menu"},"options":{"cookie_notice_version":"1","swatches_layout":false,"swatches_box_select_event":false,"swatches_box_behavior_selected":false,"swatches_box_update_urls":"1","swatches_box_reset":false,"swatches_box_reset_extent":false,"swatches_box_reset_time":300,"search_result_latency":"0"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer='defer' src="../wp-content/cache/min/1/wp-content/themes/flatsome/assets/js/flatsome.js@ver=1708586048" id="flatsome-js-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer='defer' src="../wp-content/cache/min/1/wp-content/themes/flatsome/inc/integrations/wp-rocket/flatsome-wp-rocket.js@ver=1708586048" id="flatsome-wp-rocket-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer='defer' src="../wp-content/cache/min/1/wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-search.js@ver=1708586048" id="flatsome-live-search-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer='defer' src="https://anninhphuongdong.com/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/js.cookie.min.js?ver=2.2.1" id="ez-toc-js-cookie-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer='defer' src="https://anninhphuongdong.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?ver=1.9.2" id="ez-toc-jquery-sticky-kit-js"></script>
+<script type="text/javascript" id="ez-toc-js-js-extra">
+/* <![CDATA[ */
+var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"1","width":"auto","scroll_offset":"30","fallbackIcon":"<span class=\"\"><span style=\"display:none;\">Toggle<\/span><span class=\"ez-toc-icon-toggle-span\"><svg style=\"fill: #999;color:#999\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" class=\"list-377408\" width=\"20px\" height=\"20px\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z\" fill=\"currentColor\"><\/path><\/svg><svg style=\"fill: #999;color:#999\" class=\"arrow-unsorted-368013\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"10px\" height=\"10px\" viewBox=\"0 0 24 24\" version=\"1.2\" baseProfile=\"tiny\"><path d=\"M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z\"\/><\/svg><\/span><\/span>"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer='defer' src="https://anninhphuongdong.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=2.0.51.1-1689319275" id="ez-toc-js-js"></script>
+    <script type="rocketlazyloadscript">
+    var zalo_acc = {
+        //"sdtzalo" : "mã qr code"
+        '0964414388': '1jbumo839uwf2 ',		
+    };
+    function devvnCheckLinkAvailability(link, successCallback, errorCallback) {
+        var hiddenIframe = document.querySelector("#hiddenIframe");
+        if (!hiddenIframe) {
+            hiddenIframe = document.createElement("iframe");
+            hiddenIframe.id = "hiddenIframe";
+            hiddenIframe.style.display = "none";
+            document.body.appendChild(hiddenIframe);
+        }
+        var timeout = setTimeout(function () {
+            errorCallback("Link is not supported.");
+            window.removeEventListener("blur", handleBlur);
+        }, 2500);
+        var result = {};
+        function handleMouseMove(event) {
+            if (!result.x) {
+                result = {
+                    x: event.clientX,
+                    y: event.clientY,
+                };
+            }
+        }
+        function handleBlur() {
+            clearTimeout(timeout);
+            window.addEventListener("mousemove", handleMouseMove);
+        }
+        window.addEventListener("blur", handleBlur);
+        window.addEventListener(
+            "focus",
+            function onFocus() {
+                setTimeout(function () {
+                    if (document.hasFocus()) {
+                        successCallback(function (pos) {
+                            if (!pos.x) {
+                                return true;
+                            }
+                            var screenWidth =
+                                window.innerWidth ||
+                                document.documentElement.clientWidth ||
+                                document.body.clientWidth;
+                            var alertWidth = 300;
+                            var alertHeight = 100;
+                            var isXInRange =
+                                pos.x - 100 < 0.5 * (screenWidth + alertWidth) &&
+                                pos.x + 100 > 0.5 * (screenWidth + alertWidth);
+                            var isYInRange =
+                                pos.y - 40 < alertHeight && pos.y + 40 > alertHeight;
+                            return isXInRange && isYInRange
+                                ? "Link can be opened."
+                                : "Link is not supported.";
+                        }(result));
+                    } else {
+                        successCallback("Link can be opened.");
+                    }
+                    window.removeEventListener("focus", onFocus);
+                    window.removeEventListener("blur", handleBlur);
+                    window.removeEventListener("mousemove", handleMouseMove);
+                }, 500);
+            },
+            { once: true }
+        );
+        hiddenIframe.contentWindow.location.href = link;
+    }
+    Object.keys(zalo_acc).map(function(sdt, index) {
+        let qrcode = zalo_acc[sdt];
+        const zaloLinks = document.querySelectorAll('a[href*="zalo.me/'+sdt+'"]');
+        zaloLinks.forEach((zalo) => {
+            zalo.addEventListener("click", (event) => {
+                event.preventDefault();
+                const userAgent = navigator.userAgent.toLowerCase();
+                const isIOS = /iphone|ipad|ipod/.test(userAgent);
+                const isAndroid = /android/.test(userAgent);
+                let redirectURL = null;
+                if (isIOS) {
+                    redirectURL = 'zalo://qr/p/'+qrcode;
+                    window.location.href = redirectURL;
+                } else if (isAndroid) {
+                    redirectURL = 'zalo://zaloapp.com/qr/p/'+qrcode;
+                    window.location.href = redirectURL;
+                } else {
+                    redirectURL = 'zalo://conversation?phone='+sdt;
+                    zalo.classList.add("zalo_loading");
+                    devvnCheckLinkAvailability(
+                        redirectURL,
+                        function (result) {
+                            zalo.classList.remove("zalo_loading");
+                        },
+                        function (error) {
+                            zalo.classList.remove("zalo_loading");
+                            redirectURL = 'https://chat.zalo.me/?phone='+sdt;
+                            window.location.href = redirectURL;
+                        }
+                    );
+                }
+            });
+        });
+    });
+    //Thêm css vào site để lúc ấn trên pc trong lúc chờ check chuyển hướng sẽ không ấn vào thẻ a đó được nữa
+    var styleElement = document.createElement("style");
+    var cssCode = ".zalo_loading { pointer-events: none; }";
+    styleElement.innerHTML = cssCode;
+    document.head.appendChild(styleElement);
+</script>
+    <script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://anninhphuongdong.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script>
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1708915262 -->
