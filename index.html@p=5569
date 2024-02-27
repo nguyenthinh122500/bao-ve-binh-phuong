@@ -100,7 +100,7 @@ div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-
 </style>
 
 
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://anninhphuongdong.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
 <script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer='defer' src="https://anninhphuongdong.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="ez-toc-scroll-scriptjs-js-after">
 /* <![CDATA[ */
