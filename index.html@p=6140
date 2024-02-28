@@ -165,7 +165,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
           <!-- Logo -->
           <div id="logo" class="flex-col logo">
             <!-- Header logo -->
-<a href="cong-ty-bao-ve-tot-nhat-tphcm/index.html" title="Công ty Bảo vệ Bình Phương - Cung cấp dịch vụ bảo vệ &amp; Vệ sĩ chuyên nghiệp" rel="home">
+<a href="../index.html" title="Công ty Bảo vệ Bình Phương - Cung cấp dịch vụ bảo vệ &amp; Vệ sĩ chuyên nghiệp" rel="home">
     <img width="284" height="100" src="https://r2.easyimg.io/uopbk89mk/logo.png" class="header_logo header-logo" alt="Công ty Bảo vệ Bình Phương" data-lazy-src="https://r2.easyimg.io/uopbk89mk/logo.png"/><noscript><img width="284" height="100" src="wp-content/uploads/2023/08/logo-bao-ve-chuyen-nghiep-hcm.png" class="header_logo header-logo" alt="Công ty Bảo vệ Bình Phương"/></noscript><img  width="284" height="100" src="https://r2.easyimg.io/uopbk89mk/logo.png" class="header-logo-dark" alt="Công ty Bảo vệ Bình Phương" data-lazy-src="https://r2.easyimg.io/uopbk89mk/logo.png"/><noscript><img  width="284" height="100" src="wp-content/uploads/2023/08/logo-bao-ve-chuyen-nghiep-hcm.png" class="header-logo-dark" alt="Công ty Bảo vệ Bình Phương"/></noscript></a>
           </div>
 
@@ -190,7 +190,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
           <!-- Right Elements -->
           <div class="flex-col hide-for-medium flex-right">
             <ul class="header-nav header-nav-main nav nav-right  nav-uppercase">
-              <li id="menu-item-5867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5867 menu-item-design-default"><a href="cong-ty-bao-ve-tot-nhat-tphcm/index.html" class="nav-top-link">Trang Chủ</a></li>
+              <li id="menu-item-5867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5867 menu-item-design-default"><a href="../index.html" class="nav-top-link">Trang Chủ</a></li>
 <li id="menu-item-2107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2107 menu-item-design-default"><a href="dich-vu-bao-ve-chung-cu/index.html" class="nav-top-link">GIỚI THIỆU</a></li>
 <li id="menu-item-5870" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5870 menu-item-design-default has-dropdown"><a href="chuyen-muc/dich-vu/page/1/index.html" class="nav-top-link">Dịch vụ<i class="icon-angle-down" ></i></a>
 <ul class="sub-menu nav-dropdown nav-dropdown-default">
@@ -220,7 +220,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 		<ul class="nav-dropdown nav-dropdown-default">
 	 	<li class="header-search-form search-form html relative has-icon">
 	<div class="header-search-form-wrapper">
-		<div class="searchform-wrapper ux-search-box relative is-normal"><form method="get" class="searchform" action="cong-ty-bao-ve-tot-nhat-tphcm/index.html" role="search">
+		<div class="searchform-wrapper ux-search-box relative is-normal"><form method="get" class="searchform" action="../index.html" role="search">
 		<div class="flex-row relative">
 			<div class="flex-col flex-grow">
 	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Search&hellip;" />
@@ -351,7 +351,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 <p><span style="color: #282828;">Ngoài các kỹ năng trên thì nhân viên bảo vệ trường học cần đảm bảo có sức khỏe và thể lực tốt để có thể hoạt động hiệu quả trong một môi trường làm việc đầy thách thức. Họ cần phải có khả năng di chuyển, đứng lâu và thực hiện các công việc liên quan đến an ninh và trật tự trong khuôn viên trường học.</span></p>
 <figure id="attachment_5637" aria-describedby="caption-attachment-5637" style="width: 700px" class="wp-caption aligncenter"><img decoding="async" class="wp-image-5637 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20400'%3E%3C/svg%3E" alt="dich-vu-bao-ve-truong-hoc" width="700" height="400" data-lazy-srcset="https://baovebinhphuong.com/wp-content/uploads/2020/11/dich-vu-bao-ve-truong-hoc-2.jpg 700w, https://baovebinhphuong.com/wp-content/uploads/2020/11/dich-vu-bao-ve-truong-hoc-2-300x171.jpg 300w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" data-lazy-src="https://baovebinhphuong.com/wp-content/uploads/2020/11/dich-vu-bao-ve-truong-hoc-2.jpg" /><noscript><img decoding="async" class="wp-image-5637 size-full" src="wp-content/uploads/2020/11/dich-vu-bao-ve-truong-hoc-2.jpg" alt="dich-vu-bao-ve-truong-hoc" width="700" height="400" srcset="wp-content/uploads/2020/11/dich-vu-bao-ve-truong-hoc-2.jpg 700w, wp-content/uploads/2020/11/dich-vu-bao-ve-truong-hoc-2-300x171.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" /></noscript><figcaption id="caption-attachment-5637" class="wp-caption-text">Bình Phương &#8211; Công ty cung cấp bảo vệ trường học uy tín nhất hiện nay</figcaption></figure>
 <h2><span class="ez-toc-section" id="Song_Hoa_Long_%E2%80%93_Cong_ty_cung_cap_bao_ve_truong_hoc_uy_tin_nhat_hien_nay"></span><span style="color: #000080;">Bình Phương &#8211; Công ty cung cấp bảo vệ trường học uy tín nhất hiện nay</span><span class="ez-toc-section-end"></span></h2>
-<p><span style="color: #282828;">Trên đây là những thông tin chia sẽ của <span style="color: #0000ff;"><a style="color: #0000ff;" href="cong-ty-bao-ve-tot-nhat-tphcm/index.html">bảo vệ Bình Phương</a></span> về <strong>nhiệm vụ của nhân viên bảo vệ trường học</strong>. Hi vọng những thông tin trên sẽ giúp quý vị có thêm kiến thức về sự cần thiết của bảo vệ tại trường học. Bình Phương với nhiều năm kinh nghiệm cung cấp cho <span style="color: #0000ff;"><a style="color: #0000ff;" href="dich-vu-bao-ve-truong-hoc.html"><strong>thuê bảo vệ trường học</strong> </a></span>chuyên nghiệp, uy tín nhất hiện nay. Chúng Tôi có đội ngũ nhân viên giàu kinh nghiệm tự tin sẽ làm hài lòng quý vị </span></p>
+<p><span style="color: #282828;">Trên đây là những thông tin chia sẽ của <span style="color: #0000ff;"><a style="color: #0000ff;" href="../index.html">bảo vệ Bình Phương</a></span> về <strong>nhiệm vụ của nhân viên bảo vệ trường học</strong>. Hi vọng những thông tin trên sẽ giúp quý vị có thêm kiến thức về sự cần thiết của bảo vệ tại trường học. Bình Phương với nhiều năm kinh nghiệm cung cấp cho <span style="color: #0000ff;"><a style="color: #0000ff;" href="dich-vu-bao-ve-truong-hoc.html"><strong>thuê bảo vệ trường học</strong> </a></span>chuyên nghiệp, uy tín nhất hiện nay. Chúng Tôi có đội ngũ nhân viên giàu kinh nghiệm tự tin sẽ làm hài lòng quý vị </span></p>
 
 	
 	<div class="blog-share text-center" style="display:none"><div class="is-divider medium"></div><div class="social-icons share-icons share-row relative" ><a href="whatsapp://send?text=Chi%20ti%E1%BA%BFt%20nhi%E1%BB%87m%20v%E1%BB%A5%20c%E1%BB%A7a%20nh%C3%A2n%20vi%C3%AAn%20b%E1%BA%A3o%20v%E1%BB%87%20tr%C6%B0%E1%BB%9Dng%20h%E1%BB%8Dc%20%C4%91%E1%BA%A7y%20%C4%91%E1%BB%A7%20nh%E1%BA%A5t - https://baovebinhphuong.com/nhiem-vu-cua-nhan-vien-bao-ve-truong-hoc/" data-action="share/whatsapp/share" class="icon button circle is-outline tooltip whatsapp show-for-medium" title="Share on WhatsApp" aria-label="Share on WhatsApp"><i class="icon-whatsapp"></i></a><a href="/nhiem-vu-cua-nhan-vien-bao-ve-truong-hoc/" data-label="Facebook" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon button circle is-outline tooltip facebook" title="Share on Facebook" aria-label="Share on Facebook"><i class="icon-facebook" ></i></a><a href="/nhiem-vu-cua-nhan-vien-bao-ve-truong-hoc/" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon button circle is-outline tooltip twitter" title="Share on Twitter" aria-label="Share on Twitter"><i class="icon-twitter" ></i></a><a href="mailto:baovebinhphuong.info@gmail.com?subject=Chi%20ti%E1%BA%BFt%20nhi%E1%BB%87m%20v%E1%BB%A5%20c%E1%BB%A7a%20nh%C3%A2n%20vi%C3%AAn%20b%E1%BA%A3o%20v%E1%BB%87%20tr%C6%B0%E1%BB%9Dng%20h%E1%BB%8Dc%20%C4%91%E1%BA%A7y%20%C4%91%E1%BB%A7%20nh%E1%BA%A5t&amp;body=Check%20this%20out:%20https://baovebinhphuong.com/nhiem-vu-cua-nhan-vien-bao-ve-truong-hoc/" rel="nofollow" class="icon button circle is-outline tooltip email" title="Email to a Friend" aria-label="Email to a Friend"><i class="icon-envelop" ></i></a><a href="https://pinterest.com/pin/create/button/?url=https://baovebinhphuong.com/nhiem-vu-cua-nhan-vien-bao-ve-truong-hoc/&amp;media=https://baovebinhphuong.com/wp-content/uploads/2023/09/nhiem-vu-cua-nhan-vien-bao-ve-truong-hoc.jpg&amp;description=Chi%20ti%E1%BA%BFt%20nhi%E1%BB%87m%20v%E1%BB%A5%20c%E1%BB%A7a%20nh%C3%A2n%20vi%C3%AAn%20b%E1%BA%A3o%20v%E1%BB%87%20tr%C6%B0%E1%BB%9Dng%20h%E1%BB%8Dc%20%C4%91%E1%BA%A7y%20%C4%91%E1%BB%A7%20nh%E1%BA%A5t" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon button circle is-outline tooltip pinterest" title="Pin on Pinterest" aria-label="Pin on Pinterest"><i class="icon-pinterest" ></i></a><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://baovebinhphuong.com/nhiem-vu-cua-nhan-vien-bao-ve-truong-hoc/&title=Chi%20ti%E1%BA%BFt%20nhi%E1%BB%87m%20v%E1%BB%A5%20c%E1%BB%A7a%20nh%C3%A2n%20vi%C3%AAn%20b%E1%BA%A3o%20v%E1%BB%87%20tr%C6%B0%E1%BB%9Dng%20h%E1%BB%8Dc%20%C4%91%E1%BA%A7y%20%C4%91%E1%BB%A7%20nh%E1%BA%A5t" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"  rel="noopener noreferrer nofollow" target="_blank" class="icon button circle is-outline tooltip linkedin" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="icon-linkedin" ></i></a></div></div></div>
@@ -455,7 +455,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 <p><strong>Trụ Sở Chính</strong>: <strong>F1/1D đường số 1, KDC Đồng Danh, Vĩnh Lộc A, Bình Chánh, TP.Hồ Chí Minh</strong></p>
 <p><strong>Hotline: 0964.414.388  </strong></p>
 <p><strong>Email:</strong> baovebinhphuong.info@gmail.com</p>
-<p><strong>Website:</strong> <a href="cong-ty-bao-ve-tot-nhat-tphcm/index.html">https://baovebinhphuong.com</a></p>
+<p><strong>Website:</strong> <a href="../index.html">https://baovebinhphuong.com</a></p>
 
 </div>
 		</div><div id="text-5" class="col pb-0 widget widget_text"><span class="widget-title">DỊCH VỤ BẢO VỆ CÁC TỈNH</span><div class="is-divider small"></div>			<div class="textwidget"><p><a href="dich-vu-bao-ve-tai-binh-duong.html">Dịch vụ Bảo vệ tại Bình Dương</a></p>
@@ -471,7 +471,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 <p><a href="bao-ve-su-kien.html">Giá thuê Bảo vệ Sự Kiện</a></p>
 <p><a href="bao-ve-truc-dem.html">Giá thuê bảo vệ trực đêm</a></p>
 </div>
-		</div><div id="custom_html-3" class="widget_text col pb-0 widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://www.dmca.com/Protection/Status.aspx?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98" title="DMCA.com Protection Status" class="dmca-badge"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"  alt="DMCA.com Protection Status" data-lazy-src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98" /><noscript><img src ="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98"  alt="DMCA.com Protection Status" /></noscript></a>  <script type="rocketlazyloadscript" data-minify="1" src="wp-content/cache/min/1/Badges/DMCABadgeHelper.min.js@ver=1708586048" defer> </script></div></div>        
+		</div><div id="custom_html-3" class="widget_text col pb-0 widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://www.dmca.com/Protection/Status.aspx?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98" title="DMCA.com Protection Status" class="dmca-badge"> <img src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png"  alt="DMCA.com Protection Status" data-lazy-src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98" /><noscript><img src ="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98"  alt="DMCA.com Protection Status" /></noscript></a>  <script type="rocketlazyloadscript" data-minify="1" src="wp-content/cache/min/1/Badges/DMCABadgeHelper.min.js@ver=1708586048" defer> </script></div></div>        
 		</div>
 </div>
 
@@ -501,7 +501,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 		<ul class="nav nav-sidebar nav-vertical nav-uppercase">
 			<li class="header-search-form search-form html relative has-icon">
 	<div class="header-search-form-wrapper">
-		<div class="searchform-wrapper ux-search-box relative is-normal"><form method="get" class="searchform" action="cong-ty-bao-ve-tot-nhat-tphcm/index.html" role="search">
+		<div class="searchform-wrapper ux-search-box relative is-normal"><form method="get" class="searchform" action="../index.html" role="search">
 		<div class="flex-row relative">
 			<div class="flex-col flex-grow">
 	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Search&hellip;" />
@@ -514,7 +514,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
     <div class="live-search-results text-left z-top"></div>
 </form>
 </div>	</div>
-</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5867"><a href="cong-ty-bao-ve-tot-nhat-tphcm/index.html">Trang Chủ</a></li>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5867"><a href="../index.html">Trang Chủ</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2107"><a href="dich-vu-bao-ve-chung-cu/index.html">GIỚI THIỆU</a></li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5870"><a href="chuyen-muc/dich-vu/page/1/index.html">Dịch vụ</a>
 <ul class="sub-menu nav-sidebar-ul children">
@@ -562,7 +562,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 			<div class="ates-cb-hotline-circle-fill"></div>
 			<div class="ates-cb-hotline-img-circle">
 				<a href="tel:0964414388" class="ates-btn-img">
-					<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%200'%3E%3C/svg%3E" alt="Phone" width="50" data-lazy-src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png"><noscript><img src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png" alt="Phone" width="50"></noscript>
+					<img src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png" alt="Phone" width="50" data-lazy-src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png"><noscript><img src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png" alt="Phone" width="50"></noscript>
 				</a>
 			</div>
 		</div>
@@ -573,11 +573,11 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 			</a>
 		</div>
 	</div><style>.inner-fabs.show .fab::before{display:none;}</style><div id="ates-contact-buttons" class="inner-fabs show"><a target="blank" href="https://zalo.me/0964414388" class="fab roundCool" id="chat-fab" data-tooltip="Nhắn tin Zalo">
-		<img class="inner-fab-icon" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Zalo" border="0" data-lazy-src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" /><noscript><img class="inner-fab-icon" src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" alt="Zalo" border="0" /></noscript>
+		<img class="inner-fab-icon" src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" alt="Zalo" border="0" data-lazy-src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" /><noscript><img class="inner-fab-icon" src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" alt="Zalo" border="0" /></noscript>
   </a></div>
 
 <div onclick="ates_contact_buttons();" class="fab roundCool call-animation" id="main-fab">
-	<img class="img-circle" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20135%200'%3E%3C/svg%3E" alt="ClickMe" width="135" data-lazy-src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" /><noscript><img class="img-circle" src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" alt="ClickMe" width="135" /></noscript>
+	<img class="img-circle" src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" alt="ClickMe" width="135" data-lazy-src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" /><noscript><img class="img-circle" src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" alt="ClickMe" width="135" /></noscript>
 </div><div id="ates-cb-popup" class="ates-cb-popup">
 		<div class="ates-cb-popup-content">
 			<div class="ates-cb-popup-header">

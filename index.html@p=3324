@@ -165,7 +165,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
           <!-- Logo -->
           <div id="logo" class="flex-col logo">
             <!-- Header logo -->
-<a href="cong-ty-bao-ve-tot-nhat-tphcm/index.html" title="Công ty Bảo vệ Bình Phương - Cung cấp dịch vụ bảo vệ &amp; Vệ sĩ chuyên nghiệp" rel="home">
+<a href="../index.html" title="Công ty Bảo vệ Bình Phương - Cung cấp dịch vụ bảo vệ &amp; Vệ sĩ chuyên nghiệp" rel="home">
     <img width="284" height="100" src="https://r2.easyimg.io/uopbk89mk/logo.png" class="header_logo header-logo" alt="Công ty Bảo vệ Bình Phương" data-lazy-src="https://r2.easyimg.io/uopbk89mk/logo.png"/><noscript><img width="284" height="100" src="wp-content/uploads/2023/08/logo-bao-ve-chuyen-nghiep-hcm.png" class="header_logo header-logo" alt="Công ty Bảo vệ Bình Phương"/></noscript><img  width="284" height="100" src="https://r2.easyimg.io/uopbk89mk/logo.png" class="header-logo-dark" alt="Công ty Bảo vệ Bình Phương" data-lazy-src="https://r2.easyimg.io/uopbk89mk/logo.png"/><noscript><img  width="284" height="100" src="wp-content/uploads/2023/08/logo-bao-ve-chuyen-nghiep-hcm.png" class="header-logo-dark" alt="Công ty Bảo vệ Bình Phương"/></noscript></a>
           </div>
 
@@ -190,7 +190,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
           <!-- Right Elements -->
           <div class="flex-col hide-for-medium flex-right">
             <ul class="header-nav header-nav-main nav nav-right  nav-uppercase">
-              <li id="menu-item-5867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5867 menu-item-design-default"><a href="cong-ty-bao-ve-tot-nhat-tphcm/index.html" class="nav-top-link">Trang Chủ</a></li>
+              <li id="menu-item-5867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5867 menu-item-design-default"><a href="../index.html" class="nav-top-link">Trang Chủ</a></li>
 <li id="menu-item-2107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2107 menu-item-design-default"><a href="dich-vu-bao-ve-chung-cu/index.html" class="nav-top-link">GIỚI THIỆU</a></li>
 <li id="menu-item-5870" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5870 menu-item-design-default has-dropdown"><a href="chuyen-muc/dich-vu/page/1/index.html" class="nav-top-link">Dịch vụ<i class="icon-angle-down" ></i></a>
 <ul class="sub-menu nav-dropdown nav-dropdown-default">
@@ -220,7 +220,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 		<ul class="nav-dropdown nav-dropdown-default">
 	 	<li class="header-search-form search-form html relative has-icon">
 	<div class="header-search-form-wrapper">
-		<div class="searchform-wrapper ux-search-box relative is-normal"><form method="get" class="searchform" action="cong-ty-bao-ve-tot-nhat-tphcm/index.html" role="search">
+		<div class="searchform-wrapper ux-search-box relative is-normal"><form method="get" class="searchform" action="../index.html" role="search">
 		<div class="flex-row relative">
 			<div class="flex-col flex-grow">
 	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Search&hellip;" />
@@ -312,7 +312,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 <span class="ez-toc-title-toggle"><a href="index.html@p=3324#" class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle" aria-label="Toggle Table of Content" role="button"><label for="item-65dbfa4b5e83b" ><span class=""><span style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input aria-label="Toggle" aria-label="item-65dbfa4b5e83b"  type="checkbox" id="item-65dbfa4b5e83b"></a></span></div>
 <nav><ul class='ez-toc-list ez-toc-list-level-1 eztoc-visibility-hide-by-default' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="index.html@p=3324#Xu_huong_su_dung_dich_vu_bao_ve_tai_quan_3_Ho_Chi_Minh" title="Xu hướng sử dụng dịch vụ bảo vệ tại quận 3 Hồ Chí Minh">Xu hướng sử dụng dịch vụ bảo vệ tại quận 3 Hồ Chí Minh</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="index.html@p=3324#Loi_ich_khi_thue_dich_vu_bao_ve_quan_3" title="Lợi ích khi thuê dịch vụ bảo vệ quận 3">Lợi ích khi thuê dịch vụ bảo vệ quận 3</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="index.html@p=3324#Cong_ty_bao_ve_quan_3_uy_tin_can_co_nhung_tieu_chuan_gi" title="Công ty bảo vệ quận 3 uy tín cần có những tiêu chuẩn gì ?">Công ty bảo vệ quận 3 uy tín cần có những tiêu chuẩn gì ?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="index.html@p=3324#Quy_trinh_cung_cap_dich_vu_bao_ve_quan_3_cua_Song_Hoa_Long" title="Quy trình cung cấp dịch vụ bảo vệ quận 3 của Bình Phương">Quy trình cung cấp dịch vụ bảo vệ quận 3 của Bình Phương</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-5" href="index.html@p=3324#Tai_sao_nen_chon_cong_ty_bao_ve_quan_3_%E2%80%93_Song_Hoa_Long" title="Tại sao nên chọn công ty bảo vệ quận 3 &#8211; Bình Phương ?">Tại sao nên chọn công ty bảo vệ quận 3 &#8211; Bình Phương ?</a><ul class='ez-toc-list-level-3'><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-6" href="index.html@p=3324#Thong_tin_dia_chi_cong_ty_ro_rang_chinh_xac" title="Thông tin địa chỉ công ty rõ ràng, chính xác">Thông tin địa chỉ công ty rõ ràng, chính xác</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-7" href="index.html@p=3324#Nhan_vien_bao_ve_duoc_dao_tao_bai_ban" title="Nhân viên bảo vệ được đào tạo bài bản">Nhân viên bảo vệ được đào tạo bài bản</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-8" href="index.html@p=3324#Hop_dong_dich_vu_bao_ve_quan_3_ro_rang_minh_bach" title="Hợp đồng dịch vụ bảo vệ quận 3 rõ ràng, minh bạch">Hợp đồng dịch vụ bảo vệ quận 3 rõ ràng, minh bạch</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="index.html@p=3324#Loi_the_canh_tranh_cua_Song_Hoa_Long" title="Lợi thế cạnh tranh của Bình Phương">Lợi thế cạnh tranh của Bình Phương</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-10" href="index.html@p=3324#Cam_ket_ve_chat_luong" title="Cam kết về chất lượng">Cam kết về chất lượng</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-11" href="index.html@p=3324#Song_Hoa_Long_cung_cap_nhung_loai_hinh_dich_vu_nao_o_Quan_3" title="Bình Phương cung cấp những loại hình dịch vụ nào ở Quận 3">Bình Phương cung cấp những loại hình dịch vụ nào ở Quận 3</a><ul class='ez-toc-list-level-3'><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-12" href="index.html@p=3324#Pham_vi_phuc_vu_rong_rai" title="Phạm vị phục vụ rộng rãi">Phạm vị phục vụ rộng rãi</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-13" href="index.html@p=3324#Bao_gia_dich_vu_bao_ve_tai_Quan_3_cua_Song_Hoa_Long_la_bao_nhieu" title="Báo giá dịch vụ bảo vệ tại Quận 3 của Bình Phương là bao nhiêu ? ">Báo giá dịch vụ bảo vệ tại Quận 3 của Bình Phương là bao nhiêu ? </a></li></ul></nav></div>
 
-<p><span style="color: #282828;">Ở Thành phố Hồ Chí Minh, số lượng doanh nghiệp, tổ chức, cá nhân tìm đến các đơn vị cung cấp <span style="color: #0000ff;"><a style="color: #0000ff;" href="cong-ty-bao-ve-tot-nhat-tphcm/index.html">dịch vụ bảo vệ chuyên nghiệp</a></span>  là rất lớn. Và quận 3 Chính là một trong những điển hình về vấn đề này khi có rất nhiều các hoạt động kinh doanh, vui chơi giải trí, làm việc được tập trung ở đây. Nằm ngay giữa trung tâm của Sài Gòn, quận 3 chính là khu vực phát triển nhất của thành phố. Có vị trí địa lý đắc địa để nhiều người lựa chọn phát triển kinh doanh, làm ăn buôn bán.</span></p>
+<p><span style="color: #282828;">Ở Thành phố Hồ Chí Minh, số lượng doanh nghiệp, tổ chức, cá nhân tìm đến các đơn vị cung cấp <span style="color: #0000ff;"><a style="color: #0000ff;" href="../index.html">dịch vụ bảo vệ chuyên nghiệp</a></span>  là rất lớn. Và quận 3 Chính là một trong những điển hình về vấn đề này khi có rất nhiều các hoạt động kinh doanh, vui chơi giải trí, làm việc được tập trung ở đây. Nằm ngay giữa trung tâm của Sài Gòn, quận 3 chính là khu vực phát triển nhất của thành phố. Có vị trí địa lý đắc địa để nhiều người lựa chọn phát triển kinh doanh, làm ăn buôn bán.</span></p>
 <p><span style="color: #282828;">Quận 3 Hồ Chí Minh tập trung các toà nhà có cơ sở vật chất khang trang với giá trị lớn. Những hoạt động vui chơi, mua sắm thu hút đông đảo người dân tham gia. Và từ đó đã phát sinh ra các  vấn đề về bảo vệ trật tự an ninh, đảm bảo an toàn cho con người và tài sản nơi đây.</span></p>
 <p><span style="color: #282828;">Đặc thù của khu vực quận 3 là vừa hiện đại, vừa phức tạp, nhiều người có yêu cầu cao hơn khi sử dụng nhân viên bảo vệ. Có nhiều khách hàng đòi hỏi nhân viên bảo vệ phải là người giàu kinh nghiệm, có kỹ năng, sức khoẻ và tác phong làm việc thật tốt. Chính vì thế, để giúp quý khách hàng không tốn nhiều thời gian để đào tạo nhân viên bảo vệ, chúng tôi xin giới thiệu đến các bạn <strong>công ty bảo vệ quận 3</strong> &#8211; Bình Phương uy tín và chuyên nghiệp nhất trên thị trường hiện nay.</span></p>
 <h2><span class="ez-toc-section" id="Loi_ich_khi_thue_dich_vu_bao_ve_quan_3"></span><span style="color: #000080;">Lợi ích khi thuê dịch vụ bảo vệ quận 3</span><span class="ez-toc-section-end"></span></h2>
@@ -573,7 +573,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 <p><strong>Trụ Sở Chính</strong>: <strong>F1/1D đường số 1, KDC Đồng Danh, Vĩnh Lộc A, Bình Chánh, TP.Hồ Chí Minh</strong></p>
 <p><strong>Hotline: 0964.414.388  </strong></p>
 <p><strong>Email:</strong> baovebinhphuong.info@gmail.com</p>
-<p><strong>Website:</strong> <a href="cong-ty-bao-ve-tot-nhat-tphcm/index.html">https://baovebinhphuong.com</a></p>
+<p><strong>Website:</strong> <a href="../index.html">https://baovebinhphuong.com</a></p>
 
 </div>
 		</div><div id="text-5" class="col pb-0 widget widget_text"><span class="widget-title">DỊCH VỤ BẢO VỆ CÁC TỈNH</span><div class="is-divider small"></div>			<div class="textwidget"><p><a href="dich-vu-bao-ve-tai-binh-duong.html">Dịch vụ Bảo vệ tại Bình Dương</a></p>
@@ -589,7 +589,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 <p><a href="bao-ve-su-kien.html">Giá thuê Bảo vệ Sự Kiện</a></p>
 <p><a href="bao-ve-truc-dem.html">Giá thuê bảo vệ trực đêm</a></p>
 </div>
-		</div><div id="custom_html-3" class="widget_text col pb-0 widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://www.dmca.com/Protection/Status.aspx?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98" title="DMCA.com Protection Status" class="dmca-badge"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"  alt="DMCA.com Protection Status" data-lazy-src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98" /><noscript><img src ="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98"  alt="DMCA.com Protection Status" /></noscript></a>  <script type="rocketlazyloadscript" data-minify="1" src="wp-content/cache/min/1/Badges/DMCABadgeHelper.min.js@ver=1708586048" defer> </script></div></div>        
+		</div><div id="custom_html-3" class="widget_text col pb-0 widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://www.dmca.com/Protection/Status.aspx?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98" title="DMCA.com Protection Status" class="dmca-badge"> <img src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png"  alt="DMCA.com Protection Status" data-lazy-src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98" /><noscript><img src ="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=9a81f1fc-7827-42c7-a91a-33104fb4fe98"  alt="DMCA.com Protection Status" /></noscript></a>  <script type="rocketlazyloadscript" data-minify="1" src="wp-content/cache/min/1/Badges/DMCABadgeHelper.min.js@ver=1708586048" defer> </script></div></div>        
 		</div>
 </div>
 
@@ -619,7 +619,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 		<ul class="nav nav-sidebar nav-vertical nav-uppercase">
 			<li class="header-search-form search-form html relative has-icon">
 	<div class="header-search-form-wrapper">
-		<div class="searchform-wrapper ux-search-box relative is-normal"><form method="get" class="searchform" action="cong-ty-bao-ve-tot-nhat-tphcm/index.html" role="search">
+		<div class="searchform-wrapper ux-search-box relative is-normal"><form method="get" class="searchform" action="../index.html" role="search">
 		<div class="flex-row relative">
 			<div class="flex-col flex-grow">
 	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Search&hellip;" />
@@ -632,7 +632,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
     <div class="live-search-results text-left z-top"></div>
 </form>
 </div>	</div>
-</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5867"><a href="cong-ty-bao-ve-tot-nhat-tphcm/index.html">Trang Chủ</a></li>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5867"><a href="../index.html">Trang Chủ</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2107"><a href="dich-vu-bao-ve-chung-cu/index.html">GIỚI THIỆU</a></li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5870"><a href="chuyen-muc/dich-vu/page/1/index.html">Dịch vụ</a>
 <ul class="sub-menu nav-sidebar-ul children">
@@ -680,7 +680,7 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 			<div class="ates-cb-hotline-circle-fill"></div>
 			<div class="ates-cb-hotline-img-circle">
 				<a href="tel:0964414388" class="ates-btn-img">
-					<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%200'%3E%3C/svg%3E" alt="Phone" width="50" data-lazy-src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png"><noscript><img src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png" alt="Phone" width="50"></noscript>
+					<img src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png" alt="Phone" width="50" data-lazy-src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png"><noscript><img src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_phone.png" alt="Phone" width="50"></noscript>
 				</a>
 			</div>
 		</div>
@@ -691,11 +691,11 @@ jQuery(document).ready(function(){document.querySelectorAll(".ez-toc-section").f
 			</a>
 		</div>
 	</div><style>.inner-fabs.show .fab::before{display:none;}</style><div id="ates-contact-buttons" class="inner-fabs show"><a target="blank" href="https://zalo.me/0964414388" class="fab roundCool" id="chat-fab" data-tooltip="Nhắn tin Zalo">
-		<img class="inner-fab-icon" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Zalo" border="0" data-lazy-src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" /><noscript><img class="inner-fab-icon" src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" alt="Zalo" border="0" /></noscript>
+		<img class="inner-fab-icon" src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" alt="Zalo" border="0" data-lazy-src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" /><noscript><img class="inner-fab-icon" src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_zalo.png" alt="Zalo" border="0" /></noscript>
   </a></div>
 
 <div onclick="ates_contact_buttons();" class="fab roundCool call-animation" id="main-fab">
-	<img class="img-circle" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20135%200'%3E%3C/svg%3E" alt="ClickMe" width="135" data-lazy-src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" /><noscript><img class="img-circle" src="https://baovebinhphuong.com/wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" alt="ClickMe" width="135" /></noscript>
+	<img class="img-circle" src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" alt="ClickMe" width="135" data-lazy-src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" /><noscript><img class="img-circle" src="../wp-content/plugins/ates-contact-buttons/img/ates.vn_lienhe.png" alt="ClickMe" width="135" /></noscript>
 </div><div id="ates-cb-popup" class="ates-cb-popup">
 		<div class="ates-cb-popup-content">
 			<div class="ates-cb-popup-header">
