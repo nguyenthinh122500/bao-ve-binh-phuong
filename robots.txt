@@ -27,9 +27,9 @@ Disallow: /*?cat=-1*
 User-agent: Googlebot-Mobile
 Allow: /
 
-Sitemap: https://anninhphuongdong.com/sitemap.xml
-Sitemap: https://anninhphuongdong.com/sitemap_index.xml
-Sitemap: https://anninhphuongdong.com/post-sitemap.xml
-Sitemap: https://anninhphuongdong.com/page-sitemap.xml
-Sitemap: https://anninhphuongdong.com/video-sitemap.xml
-Sitemap: https://anninhphuongdong.com/category-sitemap.xml
+Sitemap: https://baovebinhphuong.com/sitemap.xml
+Sitemap: https://baovebinhphuong.com/sitemap_index.xml
+Sitemap: https://baovebinhphuong.com/post-sitemap.xml
+Sitemap: https://baovebinhphuong.com/page-sitemap.xml
+Sitemap: https://baovebinhphuong.com/video-sitemap.xml
+Sitemap: https://baovebinhphuong.com/category-sitemap.xml

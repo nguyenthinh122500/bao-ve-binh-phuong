@@ -2,13 +2,13 @@
 	<service>
 		<engineName>WordPress</engineName>
 		<engineLink>https://wordpress.org/</engineLink>
-		<homePageLink>https://anninhphuongdong.com</homePageLink>
+		<homePageLink>https://baovebinhphuong.com</homePageLink>
 		<apis>
-			<api name="WordPress" blogID="1" preferred="true" apiLink="https://anninhphuongdong.com/xmlrpc.php" />
-			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://anninhphuongdong.com/xmlrpc.php" />
-			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://anninhphuongdong.com/xmlrpc.php" />
-			<api name="Blogger" blogID="1" preferred="false" apiLink="https://anninhphuongdong.com/xmlrpc.php" />
-				<api name="WP-API" blogID="1" preferred="false" apiLink="https://anninhphuongdong.com/wp-json/" />
+			<api name="WordPress" blogID="1" preferred="true" apiLink="https://baovebinhphuong.com/xmlrpc.php" />
+			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://baovebinhphuong.com/xmlrpc.php" />
+			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://baovebinhphuong.com/xmlrpc.php" />
+			<api name="Blogger" blogID="1" preferred="false" apiLink="https://baovebinhphuong.com/xmlrpc.php" />
+				<api name="WP-API" blogID="1" preferred="false" apiLink="https://baovebinhphuong.com/wp-json/" />
 			</apis>
 	</service>
 </rsd>
